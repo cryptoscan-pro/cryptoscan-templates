@@ -568,5 +568,628 @@
             "isActive": true,
             "templatePath": "./var/templates/transfers.js"
         }
+    ],
+    "free": [
+        {
+            "id": "5a5t53f1ywe",
+            "query": {
+                "type": "oi",
+                "variant": "cex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "oi-tracker",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text about OpenInterest and describe pump or dump for telegam message with emojis. - Send only message result with no comments. No comments, message content only"
+        },
+        
+        {
+            "id": "dump4a5t53f1ywe",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change1m",
+                "minVolume": "300000",
+                "maxPriceChange1m": "-1"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "priceMiddle5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "dump5a5t53f1ywe",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change5s",
+                "minVolume": "300000",
+                "maxPriceChange5s": "-10"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "priceMiddle5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "dumpaa5f53f11w9",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change5s",
+                "minVolume": "3000000",
+                "maxPriceChange5s": "-3"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "priceHigh5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "dumpaa5f53f11w9",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change5s",
+                "minVolume": "5000000",
+                "maxPriceChange5s": "-1"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "priceHighest5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "dump125f54f1fw0",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change30s",
+                "minVolume": "300000",
+                "maxPriceChange30s": "-5"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "priceMiddle30s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "dumpfa5f54f1fw4",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change30s",
+                "minVolume": "5000000",
+                "maxPriceChange30s": "-3"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "5"
+            },
+            "isActive": true,
+            "name": "priceHigh30s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "dumpfa8f5cccfw4",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change5m",
+                "minVolume": "10000000",
+                "maxPriceChange5m": "-2"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "5"
+            },
+            "isActive": true,
+            "name": "priceHigh1m",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+
+        
+        {
+            "id": "4a5t53f1ywe",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change1m",
+                "minVolume": "300000",
+                "minPriceChange1m": "1"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "priceMiddle5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "5a5t53f1ywe",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change5s",
+                "minVolume": "300000",
+                "minPriceChange5s": "10"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "priceMiddle5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "aa5f53f11w9",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change5s",
+                "minVolume": "3000000",
+                "minPriceChange5s": "3"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "priceHigh5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "aa5f53f11w9",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change5s",
+                "minVolume": "5000000",
+                "minPriceChange5s": "1"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "priceHighest5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "125f54f1fw0",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change30s",
+                "minVolume": "300000",
+                "minPriceChange30s": "5"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "priceMiddle30s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "fa5f54f1fw4",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change30s",
+                "minVolume": "5000000",
+                "minPriceChange30s": "3"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "5"
+            },
+            "isActive": true,
+            "name": "priceHigh30s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+        {
+            "id": "fa8f5cccfw4",
+            "query": {
+                "type": "prices",
+                "includes[price]": "change5m",
+                "minVolume": "10000000",
+                "minPriceChange5m": "2"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "5"
+            },
+            "isActive": true,
+            "name": "priceHigh1m",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/prices.js"
+        },
+
+        {
+            "id": "volume1451193fillj",
+            "query": {
+                "type": "prices",
+                "includes[volume]": "change30s",
+                "minVolume": "100000",
+                "minVolumeChange30s": "5"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "volumeMiddle5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/trades.js"
+        },
+        {
+            "id": "volume2btc193fillj",
+            "query": {
+                "type": "prices",
+                "includes[volume]": "change1m",
+                "minVolume": "500000",
+                "minVolumeChange1m": "10"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "volumeMiddle5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/trades.js"
+        },
+        {
+            "id": "volume3btc193fillj",
+            "query": {
+                "type": "prices",
+                "includes[volume]": "change5m",
+                "minVolume": "100000",
+                "minVolumeChange5m": "10"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "volumeMiddle5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/trades.js"
+        },
+        {
+            "id": "volume3btc193fillj",
+            "query": {
+                "type": "prices",
+                "minVolume": "100000",
+                "includes[volume]": "change1m",
+                "minVolumeChange1m": "10"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "volumeMiddle5s",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/volumes.js"
+        },
+
+        {
+            "id": "1a1193fil01",
+            "query": {
+                "type": "arbitrage",
+                "variant": "cex-cex",
+                "minSpread": "5",
+                "minTotalBuyUSD": "10"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "13"
+            },
+            "isActive": true,
+            "name": "arbitrageCexCex10",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "2a1193fil01",
+            "query": {
+                "type": "arbitrage",
+                "variant": "cex-cex",
+                "minSpread": "5",
+                "minTotalBuyUSD": "100"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "12"
+            },
+            "isActive": true,
+            "name": "arbitrageCexCex100",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "3a1193fil01",
+            "query": {
+                "type": "arbitrage",
+                "variant": "cex-cex",
+                "minSpread": "5",
+                "minTotalBuyUSD": "1000"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "11"
+            },
+            "isActive": true,
+            "name": "arbitrageCexCex1000",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "2455j3fhyma",
+            "query": {
+                "type": "liquidations"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "liquidations",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/liquidations.js"
+        },
+        {
+            "id": "f955j3fhy99",
+            "query": {
+                "type": "networks"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": false,
+            "name": "networks",
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "cexlistings",
+            "name": "cexlistings",
+            "query": {
+                "type": "listings",
+                "variant": "cex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "4"
+            },
+            "isActive": true,
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "dexarbitrage10",
+            "name": "dexarbitrage10",
+            "query": {
+                "type": "arbitrage",
+                "minTotalBuyUSD": 10
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "13"
+            },
+            "isActive": true,
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "dexarbitrage100",
+            "name": "dexarbitrage100",
+            "query": {
+                "type": "arbitrage",
+                "minTotalBuyUSD": 100
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "12"
+            },
+            "isActive": true,
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "dexarbitrage1000",
+            "name": "dexarbitrage1000",
+            "query": {
+                "type": "arbitrage",
+                "minTotalBuyUSD": 1000
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "11"
+            },
+            "isActive": true,
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "news",
+            "name": "news",
+            "query": {
+                "type": "news"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "232"
+            },
+            "isActive": true,
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "trending",
+            "name": "trending",
+            "query": {
+                "type": "trending"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "9"
+            },
+            "isActive": true,
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/activity.js"
+        },
+        {
+            "id": "dca",
+            "name": "dca",
+            "query": {
+                "type": "activity",
+                "variant": "dex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "9"
+            },
+            "isActive": true,
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/dca.js"
+        },
+        {
+            "id": "cca",
+            "name": "cca",
+            "query": {
+                "type": "activity",
+                "variant": "cex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "cca",
+            "name": "cca",
+            "query": {
+                "type": "activity",
+                "variant": "cex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
+        },
+        {
+            "id": "dextransfers",
+            "name": "dextransfers",
+            "query": {
+                "type": "transfers",
+                "variant": "dex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "9"
+            },
+            "isActive": true,
+            "delay": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/transfers.js"
+        }
     ]
 }
