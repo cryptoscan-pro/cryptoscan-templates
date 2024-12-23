@@ -501,7 +501,7 @@
                 "topicId": "7081"
             },
             "isActive": true,
-            "templatePath": "./var/templates/activity.js"
+            "templatePath": "./var/templates/dca.js"
         },
         {
             "id": "dca",
@@ -516,7 +516,7 @@
                 "topicId": "7081"
             },
             "isActive": true,
-            "templatePath": "./var/templates/dca.js"
+            "templatePath": "./var/templates/activity.js"
         },
         {
             "id": "cca",
@@ -1111,7 +1111,7 @@
             "isActive": true,
             "delay": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
-            "templatePath": "./var/templates/activity.js"
+            "templatePath": "./var/templates/dca.js"
         },
         {
             "id": "dca",
@@ -1128,7 +1128,7 @@
             "isActive": true,
             "delay": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
-            "templatePath": "./var/templates/dca.js"
+            "templatePath": "./var/templates/activity.js"
         },
         {
             "id": "cca",
