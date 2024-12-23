@@ -11,7 +11,7 @@ function getBigNumber(value) {
         index++;
     }
 
-    return `${value.toFixed(1).replace(/\.0$/, '')}${suffixes[index]}`;
+    return `${value.toFixed(1)?.replace(/\.0$/, '')}${suffixes[index]}`;
 }
 
 export function getExchangeUrl(exchange, to, from) {
@@ -121,7 +121,7 @@ export function getAgo(date) {
 export default function(data) {
     const label = data.change > 0 ? '📉' : '📈';
     const type = data.change > 0 ? 'растет' : 'падает';
-    const symbol = data.symbol.replace('#', '').replace('$', '').toUpperCase();
+    const symbol = data.symbol?.replace('#', '').replace('$', '').toUpperCase();
     const dexScreenerUrl = `https://dexscreener.com/search?q=${symbol}`;
     const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${symbol}/`;
     const reference = data.reference ? `#${data.reference}` : '';
