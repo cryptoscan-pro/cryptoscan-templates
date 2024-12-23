@@ -14,42 +14,6 @@ function getBigNumber(value) {
     return `${value.toFixed(1).replace(/\.0$/, '')}${suffixes[index]}`;
 }
 
-function parsePriceChanges(obj) {
-    const regex = /^priceChange(\d+)([smh])$/;
-    const results = [];
-
-    for (const key in obj) {
-        const match = key.match(regex);
-        if (match) {
-            const number = match[1]; // Число из ключа
-            const interval = match[2]; // Интервал из ключа
-            const value = obj[key]; // Значение из объекта
-
-            // Преобразуем интервал в текст
-            let intervalText;
-            switch (interval) {
-                case 's':
-                    intervalText = 'сек';
-                    break;
-                case 'm':
-                    intervalText = 'мин';
-                    break;
-                case 'h':
-                    intervalText = 'ч';
-                    break;
-                default:
-                    continue;
-            }
-
-            // Формируем текст для одного параметра
-            results.push(`${value.toFixed(1)}% за ${number} ${intervalText}`);
-        }
-    }
-
-    // Объединяем все найденные результаты в одну строку
-    return results;
-}
-
 export function getExchangeUrl(exchange, to, from) {
     switch (exchange.toLowerCase()) {
         case "bybit": {
@@ -154,7 +118,13 @@ export function getAgo(date) {
 	return `${milliseconds}ms ago`;
 }
 
-export default function (data) {
-    const changes = parsePriceChanges(data)
-    return `📉 #${data?.symbol} упал ${changes[0]} на [${data?.exchange}](${getExchangeUrl(data?.exchange, data.symbol.toLowerCase().replace('usdt', ''), 'usdt')})\nP: ${data?.price} 24h: ${getBigNumber(data.volume)} USDT (${getAgo(data.createdAt)})\n${changes.slice(1).join(', ')}\n`
-} 
+export default function(data) {
+    const label = data.change > 0 ? '📉' : '📈';
+    const type = data.change > 0 ? 'растет' : 'падает';
+    const symbol = data.symbol.replace('#', '').replace('$', '').toUpperCase();
+    const dexScreenerUrl = `https://dexscreener.com/search?q=${symbol}`;
+    const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${symbol}/`;
+    const reference = data.reference ? `#${data.reference}` : '';
+    const contract = data.contract ? (data.contract.startsWith('http') ? data.contract : `#${data.contract.replace('-', '').replace(' ', '')}`) : ''
+    return `️${label} DCA: #${symbol} ${type} на ${data.change}% #${data.symbol} ${getBigNumber(data.amount)} #${symbol}\n${getAgo(new Date(data.timestamp))} ${reference} ${contract}\n[DEX Screener](${dexScreenerUrl}) | [CoinMarketCap](${coinMarketCapUrl})`
+}

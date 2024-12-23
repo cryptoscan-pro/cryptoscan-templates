@@ -46,7 +46,7 @@ function parsePriceChanges(obj, dailyVolume) {
 
             // Формируем текст для одного параметра
             results.push({ 
-                text: `${changeVolume.toFixed(2)} USDT за ${number} ${intervalText}`, 
+                text: `${getBigNumber(changeVolume)} USDT за ${number} ${intervalText}`, 
                 absValue: Math.abs(value) 
             });
         }
