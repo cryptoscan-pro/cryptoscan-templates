@@ -126,5 +126,5 @@ export default function(data) {
     const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${symbol}/`;
     const reference = data.reference ? `#${data.reference}` : '';
     const contract = data.contract ? (data.contract.startsWith('http') ? data.contract : `#${data.contract.replace('-', '').replace(' ', '')}`) : ''
-    return `️${label} DCA: #${symbol} ${type} на ${data.change}% #${data.symbol} ${getBigNumber(data.amount)} #${symbol}\n${getAgo(new Date(data.timestamp))} ${reference} ${contract}\n[DEX Screener](${dexScreenerUrl}) | [CoinMarketCap](${coinMarketCapUrl})`
+    return `️${label} DCA: #${symbol} ${type} на ${data.change}% #${data.symbol} ${getBigNumber(data.amount)} #${symbol}\n${getAgo(new Date(data.createdAt))} ${reference} ${contract}\n[DEX Screener](${dexScreenerUrl}) | [CoinMarketCap](${coinMarketCapUrl})`
 }
