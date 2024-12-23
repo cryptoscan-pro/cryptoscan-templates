@@ -579,7 +579,7 @@
             "isActive": true,
             "name": "oi-tracker",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text about OpenInterest and describe pump or dump for telegam message with emojis. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -598,7 +598,7 @@
             "isActive": true,
             "name": "priceMiddle5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -617,7 +617,7 @@
             "isActive": true,
             "name": "priceMiddle5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -636,7 +636,7 @@
             "isActive": true,
             "name": "priceHigh5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -655,7 +655,7 @@
             "isActive": true,
             "name": "priceHighest5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -674,7 +674,7 @@
             "isActive": true,
             "name": "priceMiddle30s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -693,7 +693,7 @@
             "isActive": true,
             "name": "priceHigh30s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -712,7 +712,7 @@
             "isActive": true,
             "name": "priceHigh1m",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -731,7 +731,7 @@
             "isActive": true,
             "name": "priceMiddle5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -750,7 +750,7 @@
             "isActive": true,
             "name": "priceMiddle5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -769,7 +769,7 @@
             "isActive": true,
             "name": "priceHigh5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -788,7 +788,7 @@
             "isActive": true,
             "name": "priceHighest5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -807,7 +807,7 @@
             "isActive": true,
             "name": "priceMiddle30s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -826,7 +826,7 @@
             "isActive": true,
             "name": "priceHigh30s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -845,7 +845,7 @@
             "isActive": true,
             "name": "priceHigh1m",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -864,7 +864,7 @@
             "isActive": true,
             "name": "volumeMiddle5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/trades.js"
         },
         {
@@ -883,7 +883,7 @@
             "isActive": true,
             "name": "volumeMiddle5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/trades.js"
         },
         {
@@ -902,7 +902,7 @@
             "isActive": true,
             "name": "volumeMiddle5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/trades.js"
         },
         {
@@ -921,7 +921,7 @@
             "isActive": true,
             "name": "volumeMiddle5s",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/volumes.js"
         },
         {
@@ -940,7 +940,7 @@
             "isActive": true,
             "name": "arbitrageCexCex10",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -959,7 +959,7 @@
             "isActive": true,
             "name": "arbitrageCexCex100",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -978,7 +978,7 @@
             "isActive": true,
             "name": "arbitrageCexCex1000",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -994,7 +994,7 @@
             "isActive": true,
             "name": "liquidations",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/liquidations.js"
         },
         {
@@ -1010,7 +1010,7 @@
             "isActive": false,
             "name": "networks",
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1027,7 +1027,7 @@
             },
             "isActive": true,
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1044,7 +1044,7 @@
             },
             "isActive": true,
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1061,7 +1061,7 @@
             },
             "isActive": true,
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1078,7 +1078,7 @@
             },
             "isActive": true,
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1094,7 +1094,7 @@
             },
             "isActive": true,
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1110,7 +1110,7 @@
             },
             "isActive": true,
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/activity.js"
         },
         {
@@ -1127,7 +1127,7 @@
             },
             "isActive": true,
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dca.js"
         },
         {
@@ -1144,7 +1144,7 @@
             },
             "isActive": true,
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1161,7 +1161,7 @@
             },
             "isActive": true,
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1178,7 +1178,7 @@
             },
             "isActive": true,
             "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин \\\\- Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/transfers.js"
         }
     ]
