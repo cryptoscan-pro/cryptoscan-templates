@@ -506,7 +506,7 @@
                 "topicId": "7081"
             },
             "isActive": true,
-            "templatePath": "./var/templates/dca.js"
+            "templatePath": "./var/templates/activity.js"
         },
         {
             "id": "dca",
