@@ -125,6 +125,7 @@ export default function(data) {
     const dexScreenerUrl = `https://dexscreener.com/search?q=${symbol}`;
     const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${symbol}/`;
     const reference = data.reference ? `#${data.reference}` : '';
-    const contract = data.contract ? (data.contract.startsWith('http') ? data.contract : `#${data.contract.replace('-', '').replace(' ', '')}`) : ''
-    return `️${label} DCA: #${symbol} ${type} на ${data.change}% #${data.symbol} ${getBigNumber(data.amount)} #${symbol}\n${getAgo(new Date(data.createdAt))} ${reference} ${contract}\n[DEX Screener](${dexScreenerUrl}) | [CoinMarketCap](${coinMarketCapUrl})`
+    const contract = data.contract ? (data.contract.startsWith('http') ? data.contract : `#${data.contract?.replace('-', '').replace(' ', '')}`) : ''
+    const amount = data.amount ? getBigNumber(data.amount) + ' ' : '';
+    return `️${label} DCA: #${symbol} ${type} на ${data.change}% #${data.symbol} ${amount}#${symbol}\n${getAgo(new Date(data.createdAt))} ${reference} ${contract}\n[DEX Screener](${dexScreenerUrl}) | [CoinMarketCap](${coinMarketCapUrl})`
 }
