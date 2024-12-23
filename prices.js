@@ -161,5 +161,5 @@ export default function (data) {
     const changes = parsePriceChanges(data)
     const emoji = changes[0].startsWith('-') ? '📉' : '📈';
     const type = changes[0].startsWith('-') ? 'падает' : 'растет';
-    return `⚡️${emoji} #${data?.symbol} ${type} ${changes[0]} на [${data?.exchange}](${getExchangeUrl(data?.exchange, data.symbol.toLowerCase().replace('usdt', ''), 'usdt')})\nP: ${data?.price} 24h: ${getBigNumber(data.volume)} USDT (${getAgo(new Date(data.createdAt))})\n${changes.slice(1).join(', ')}\n`
+    return `${emoji} #${data?.symbol} ${type} ${changes[0]} на [${data?.exchange}](${getExchangeUrl(data?.exchange, data.symbol.toLowerCase().replace('usdt', ''), 'usdt')})\nP: ${data?.price} 24h: ${getBigNumber(data.volume)} USDT (${getAgo(new Date(data.createdAt))})\n${changes.slice(1).join(', ')}\n`
 } 
