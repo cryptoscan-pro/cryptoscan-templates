@@ -1,6 +1,20 @@
 {
     "pro": [
         {
+            "id": "announcements",
+            "query": {
+                "type": "announcements"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "7068"
+            },
+            "isActive": true,
+            "name": "announcements",
+            "templatePath": "./var/templates/announcements.js"
+        },
+        {
             "id": "5a5t53f1ywe",
             "query": {
                 "type": "oi",
@@ -487,7 +501,7 @@
                 "topicId": "7063"
             },
             "isActive": true,
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate to russian"
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate text to russian"
         },
         {
             "id": "trending",
@@ -565,6 +579,20 @@
         }
     ],
     "free": [
+        {
+            "id": "announcements",
+            "query": {
+                "type": "announcements"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002216554231",
+                "topicId": "4"
+            },
+            "isActive": true,
+            "name": "announcements",
+            "templatePath": "./var/templates/announcements.js"
+        },
         {
             "id": "5a5t53f1ywe",
             "query": {
@@ -1095,7 +1123,7 @@
             "isActive": true,
             "delay": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate to russian"
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate text to russian"
         },
         {
             "id": "trending",
