@@ -84,5 +84,5 @@ export default function(data) {
     const spread = data.spread || (data.buyPriceTo / data.buyPriceFrom * 100 - 100);
     const dexScreenerUrl = `https://dexscreener.com/search?q=${data.contract}`;
     const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${data.contract}/`;
-    return `${symbol} **${data.variant.toUpperCase()}** #${data.symbol} (+${spread.toFixed(1)}%) from [${data.exchangeFrom}](${getExchangeUrl(data.exchangeFrom, data.symbol, 'USDT')}) to [${data.exchangeTo}](${getExchangeUrl(data.exchangeTo, data.symbol, 'USDT')})\n${secondSymbol} #${data.network} #${data.exchangeFrom} #${data.exchangeTo} #${data.contract.slice(0, 5)}\n[DexScreener](${dexScreenerUrl}) | [CM](${coinMarketCapUrl})`
+    return `${symbol} **${data.variant.toUpperCase()}** #${data.symbol} **${data.totalBuyUSD}** (+${spread.toFixed(1)}%) from [${data.exchangeFrom}](${getExchangeUrl(data.exchangeFrom, data.symbol, 'USDT')}) to [${data.exchangeTo}](${getExchangeUrl(data.exchangeTo, data.symbol, 'USDT')})\n${secondSymbol} #${data.network} #${data.exchangeFrom} #${data.exchangeTo} #${data.contract.slice(0, 5)}\n[DexScreener](${dexScreenerUrl}) | [CM](${coinMarketCapUrl})`
 }
