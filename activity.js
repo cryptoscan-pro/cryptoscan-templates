@@ -97,10 +97,10 @@ export function getExchangeUrl(exchange, to, from) {
 function getTradeType(from) {
     const baseCoins = ['USDT', 'USDC', 'WETH', 'ETH']
     if (baseCoins.includes(from)) {
-        return 'продают 🧨'
+        return 'selling 🧨'
     }
 
-    return 'покупают 🔫'
+    return 'buying 🔫'
 }
 
 export function getAgo(date) {
