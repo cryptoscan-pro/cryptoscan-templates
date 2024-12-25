@@ -1063,11 +1063,13 @@
             "name": "dexarbitrage10",
             "query": {
                 "type": "arbitrage",
+                "minSpread": 0,
                 "minTotalBuyUSD": 10
             },
             "destination": {
                 "type": "channel",
                 "id": "-1002216554231",
+                "minSpread": 0,
                 "topicId": "13"
             },
             "isActive": true,
@@ -1080,11 +1082,13 @@
             "name": "dexarbitrage100",
             "query": {
                 "type": "arbitrage",
+                "minSpread": 0,
                 "minTotalBuyUSD": 100
             },
             "destination": {
                 "type": "channel",
                 "id": "-1002216554231",
+                "minSpread": 0,
                 "topicId": "12"
             },
             "isActive": true,
@@ -1097,6 +1101,7 @@
             "name": "dexarbitrage1000",
             "query": {
                 "type": "arbitrage",
+                "minSpread": 0,
                 "minTotalBuyUSD": 1000
             },
             "destination": {
@@ -1646,6 +1651,7 @@
             "name": "dexarbitrage10",
             "query": {
                 "type": "arbitrage",
+                "minSpread": 0,
                 "minTotalBuyUSD": 10
             },
             "destination": {
@@ -1661,6 +1667,7 @@
             "name": "dexarbitrage100",
             "query": {
                 "type": "arbitrage",
+                "minSpread": 0,
                 "minTotalBuyUSD": 100
             },
             "destination": {
@@ -1676,6 +1683,7 @@
             "name": "dexarbitrage1000",
             "query": {
                 "type": "arbitrage",
+                "minSpread": 0,
                 "minTotalBuyUSD": 1000
             },
             "destination": {
