@@ -78,11 +78,27 @@ export function getExchangeUrl(exchange, to, from) {
     }
 }
 
+function getBigNumber(value) {
+    if (typeof value !== 'number') {
+        return '0';
+    }
+
+    const suffixes = ['', 'K', 'M', 'B'];
+    let index = 0;
+
+    while (value >= 1000 && index < suffixes.length - 1) {
+        value /= 1000;
+        index++;
+    }
+
+    return `${value.toFixed(1).replace(/\.0$/, '')}${suffixes[index]}`;
+}
+
 export default function(data) {
     const symbol = data.variant.toLowerCase() === 'dex-cex' ? '💰🔗' : '💰🏦'
     const secondSymbol = '🚨';
     const spread = data.spread || (data.buyPriceTo / data.buyPriceFrom * 100 - 100);
     const dexScreenerUrl = `https://dexscreener.com/search?q=${data.contract}`;
     const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${data.contract}/`;
-    return `${symbol} **${data.variant.toUpperCase()}** #${data.symbol} **${data.totalBuyUSD}** (+${spread.toFixed(1)}%) from [${data.exchangeFrom}](${getExchangeUrl(data.exchangeFrom, data.symbol, 'USDT')}) to [${data.exchangeTo}](${getExchangeUrl(data.exchangeTo, data.symbol, 'USDT')})\n${secondSymbol} #${data.network} #${data.exchangeFrom} #${data.exchangeTo} #${data.contract.slice(0, 5)}\n[DexScreener](${dexScreenerUrl}) | [CM](${coinMarketCapUrl})`
+    return `${symbol} **${data.variant.toUpperCase()}** #${data.symbol} **$${getBigNumber(data.totalBuyUSD)}** (+${spread.toFixed(1)}%) from [${data.exchangeFrom}](${getExchangeUrl(data.exchangeFrom, data.symbol, 'USDT')}) to [${data.exchangeTo}](${getExchangeUrl(data.exchangeTo, data.symbol, 'USDT')})\n${secondSymbol} #${data.network} #${data.exchangeFrom} #${data.exchangeTo} #${data.contract.slice(0, 5)}\n[DexScreener](${dexScreenerUrl}) | [CM](${coinMarketCapUrl})`
 }
