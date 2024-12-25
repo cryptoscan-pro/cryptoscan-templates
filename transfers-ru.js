@@ -11,7 +11,31 @@ function getBigNumber(value) {
         index++;
     }
 
-    return `${value.toFixed(1)?.replace(/\.0$/, '')}${suffixes[index]}`;
+    return `${value.toFixed(1).replace(/\.0$/, '')}${suffixes[index]}`;
+}
+
+export function getAgo(date) {
+	const now = new Date();
+	const milliseconds = now.getTime() - date.getTime();
+
+	const intervals = {
+		year: 31536000000,
+		month: 2592000000,
+		day: 86400000,
+		hour: 3600000,
+		minute: 60000,
+		s: 1000,
+		ms: 1,
+	};
+
+	for (const [unit, value] of Object.entries(intervals)) {
+		const interval = Math.floor(milliseconds / value);
+		if (interval >= 1) {
+			return `${interval}${unit} ago`;
+		}
+	}
+
+	return `${milliseconds}ms ago`;
 }
 
 export function getExchangeUrl(exchange, to, from) {
@@ -94,38 +118,14 @@ export function getExchangeUrl(exchange, to, from) {
     }
 }
 
-export function getAgo(date) {
-	const now = new Date();
-	const milliseconds = now.getTime() - date.getTime();
-
-	const intervals = {
-		year: 31536000000,
-		month: 2592000000,
-		day: 86400000,
-		hour: 3600000,
-		minute: 60000,
-		s: 1000,
-		ms: 1,
-	};
-
-	for (const [unit, value] of Object.entries(intervals)) {
-		const interval = Math.floor(milliseconds / value);
-		if (interval >= 1) {
-			return `${interval}${unit} ago`;
-		}
-	}
-
-	return `${milliseconds}ms ago`;
-}
-
 export default function(data) {
-    const label = data.change > 0 ? '📉' : '📈';
-    const type = data.change > 0 ? 'pumping' : 'dumping';
-    const symbol = data.symbol?.replace('#', '').replace('$', '').toUpperCase();
-    const dexScreenerUrl = `https://dexscreener.com/search?q=${symbol}`;
-    const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${symbol}/`;
-    const reference = data.reference ? `#${data.reference}` : '';
-    const contract = data.contract ? (data.contract.startsWith('http') ? data.contract : `#${data.contract?.replace('-', '')?.replace(' ', '')}`) : ''
-    const amount = !!data?.amount ? (getBigNumber(data.amount) + ' ') : '';
-    return `️${label} DCA: #${symbol} ${type} for ${data.change}% #${data.symbol} ${amount}#${symbol}\n${getAgo(new Date(data.createdAt))} ${reference} ${contract}\n[DEX Screener](${dexScreenerUrl}) | [CoinMarketCap](${coinMarketCapUrl})`
+    const isExchange = data.from.length > 12 || data.to.length > 12;
+    const isDeposit = (isExchange && data.from.length > 12) ? true : false 
+    const isWithdraw = (isExchange && data.from.length > 12) ? true : false 
+    const transferSymbol = isDeposit ? '📥' : isWithdraw ? '📤' : '💸'
+        
+    const exchangeSymbol = isExchange ? '🏦' : '';
+    const symbol = data.symbol.replace('#', '').toUpperCase();
+    const exchange = data.exchange.replace('-', '').toLowerCase();
+    return `${exchangeSymbol}${transferSymbol} отправляется ${getBigNumber(data.amount)} #${symbol} из ${data.from} в ${data.to} ([${exchange}](${getExchangeUrl(exchange, symbol, 'USDT')}))\n${getAgo(new Date(data.createdAt))}`
 }

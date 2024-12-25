@@ -11,7 +11,46 @@ function getBigNumber(value) {
         index++;
     }
 
-    return `${value.toFixed(1)?.replace(/\.0$/, '')}${suffixes[index]}`;
+    return `${value.toFixed(1).replace(/\.0$/, '')}${suffixes[index]}`;
+}
+
+function parsePriceChanges(obj) {
+    const regex = /^volumeChange(\d+)([smh])$/;
+    const results = [];
+
+    for (const key in obj) {
+        const match = key.match(regex);
+        if (match) {
+            const number = match[1]; // Число из ключа
+            const interval = match[2]; // Интервал из ключа
+            const value = obj[key]; // Значение из объекта
+
+            // Преобразуем интервал в текст
+            let intervalText;
+            switch (interval) {
+                case 's':
+                    intervalText = 'сек';
+                    break;
+                case 'm':
+                    intervalText = 'мин';
+                    break;
+                case 'h':
+                    intervalText = 'ч';
+                    break;
+                default:
+                    continue;
+            }
+
+            // Формируем текст для одного параметра
+            results.push({ text: `${value.toFixed(1)}% за ${number} ${intervalText}`, absValue: Math.abs(value) });
+        }
+    }
+
+    // Сортируем по убыванию абсолютных значений
+    results.sort((a, b) => b.absValue - a.absValue);
+
+    // Возвращаем только текст
+    return results.map(result => result.text);
 }
 
 export function getExchangeUrl(exchange, to, from) {
@@ -118,14 +157,9 @@ export function getAgo(date) {
 	return `${milliseconds}ms ago`;
 }
 
-export default function(data) {
-    const label = data.change > 0 ? '📉' : '📈';
-    const type = data.change > 0 ? 'pumping' : 'dumping';
-    const symbol = data.symbol?.replace('#', '').replace('$', '').toUpperCase();
-    const dexScreenerUrl = `https://dexscreener.com/search?q=${symbol}`;
-    const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${symbol}/`;
-    const reference = data.reference ? `#${data.reference}` : '';
-    const contract = data.contract ? (data.contract.startsWith('http') ? data.contract : `#${data.contract?.replace('-', '')?.replace(' ', '')}`) : ''
-    const amount = !!data?.amount ? (getBigNumber(data.amount) + ' ') : '';
-    return `️${label} DCA: #${symbol} ${type} for ${data.change}% #${data.symbol} ${amount}#${symbol}\n${getAgo(new Date(data.createdAt))} ${reference} ${contract}\n[DEX Screener](${dexScreenerUrl}) | [CoinMarketCap](${coinMarketCapUrl})`
-}
+export default function (data) {
+    const changes = parsePriceChanges(data)
+    const emoji = changes[0].startsWith('-') ? '🌧' : '🌈';
+    const type = changes[0].startsWith('-') ? 'упал интерес' : 'вырос интерес';
+    return `${emoji} #${data?.symbol} ${type} ${changes[0]} на [${data?.exchange}](${getExchangeUrl(data?.exchange, data.symbol.toLowerCase().replace('usdt', ''), 'usdt')})\nP: ${data?.price} 24h: ${getBigNumber(data.volume)} USDT (${getAgo(new Date(data.createdAt))})\n${changes.slice(1).join(', ')}\n`
+} 

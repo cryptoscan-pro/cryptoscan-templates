@@ -11,7 +11,7 @@ function getBigNumber(value) {
         index++;
     }
 
-    return `${value.toFixed(1)?.replace(/\.0$/, '')}${suffixes[index]}`;
+    return `${value.toFixed(1).replace(/\.0$/, '')}${suffixes[index]}`;
 }
 
 export function getExchangeUrl(exchange, to, from) {
@@ -94,6 +94,15 @@ export function getExchangeUrl(exchange, to, from) {
     }
 }
 
+function getTradeType(from) {
+    const baseCoins = ['USDT', 'USDC', 'WETH', 'ETH']
+    if (baseCoins.includes(from)) {
+        return 'продают 🧨'
+    }
+
+    return 'покупают 🔫'
+}
+
 export function getAgo(date) {
 	const now = new Date();
 	const milliseconds = now.getTime() - date.getTime();
@@ -119,13 +128,7 @@ export function getAgo(date) {
 }
 
 export default function(data) {
-    const label = data.change > 0 ? '📉' : '📈';
-    const type = data.change > 0 ? 'pumping' : 'dumping';
-    const symbol = data.symbol?.replace('#', '').replace('$', '').toUpperCase();
-    const dexScreenerUrl = `https://dexscreener.com/search?q=${symbol}`;
-    const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${symbol}/`;
-    const reference = data.reference ? `#${data.reference}` : '';
-    const contract = data.contract ? (data.contract.startsWith('http') ? data.contract : `#${data.contract?.replace('-', '')?.replace(' ', '')}`) : ''
-    const amount = !!data?.amount ? (getBigNumber(data.amount) + ' ') : '';
-    return `️${label} DCA: #${symbol} ${type} for ${data.change}% #${data.symbol} ${amount}#${symbol}\n${getAgo(new Date(data.createdAt))} ${reference} ${contract}\n[DEX Screener](${dexScreenerUrl}) | [CoinMarketCap](${coinMarketCapUrl})`
+    const symbol = data.symbol.replace('#', '').toUpperCase();
+    const symbolFrom = data.symbolFrom.replace('#', '').toUpperCase();
+    return `⚖️ #${symbolFrom} ${getTradeType(symbolFrom)} на ${data.amount} #${data.symbol} ${getBigNumber(data.amount)} #${symbol}\n${getAgo(new Date(data.createdAt))}`
 }

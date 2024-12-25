@@ -29,20 +29,20 @@ function parsePriceChanges(obj) {
             let intervalText;
             switch (interval) {
                 case 's':
-                    intervalText = 'сек';
+                    intervalText = 'sec';
                     break;
                 case 'm':
-                    intervalText = 'мин';
+                    intervalText = 'min';
                     break;
                 case 'h':
-                    intervalText = 'ч';
+                    intervalText = 'h';
                     break;
                 default:
                     continue;
             }
 
             // Формируем текст для одного параметра
-            results.push({ text: `${value.toFixed(1)}% за ${number} ${intervalText}`, absValue: Math.abs(value) });
+            results.push({ text: `${value.toFixed(1)}% in ${number} ${intervalText}`, absValue: Math.abs(value) });
         }
     }
 
@@ -160,6 +160,6 @@ export function getAgo(date) {
 export default function (data) {
     const changes = parsePriceChanges(data)
     const emoji = changes[0].startsWith('-') ? '🌧' : '🌈';
-    const type = changes[0].startsWith('-') ? 'упал интерес' : 'вырос интерес';
-    return `${emoji} #${data?.symbol} ${type} ${changes[0]} на [${data?.exchange}](${getExchangeUrl(data?.exchange, data.symbol.toLowerCase().replace('usdt', ''), 'usdt')})\nP: ${data?.price} 24h: ${getBigNumber(data.volume)} USDT (${getAgo(new Date(data.createdAt))})\n${changes.slice(1).join(', ')}\n`
+    const type = changes[0].startsWith('-') ? 'low interest' : 'high interest';
+    return `${emoji} #${data?.symbol} ${type} ${changes[0]} in [${data?.exchange}](${getExchangeUrl(data?.exchange, data.symbol.toLowerCase().replace('usdt', ''), 'usdt')})\nP: ${data?.price} 24h: ${getBigNumber(data.volume)} USDT (${getAgo(new Date(data.createdAt))})\n${changes.slice(1).join(', ')}\n`
 } 

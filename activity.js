@@ -130,5 +130,5 @@ export function getAgo(date) {
 export default function(data) {
     const symbol = data.symbol.replace('#', '').toUpperCase();
     const symbolFrom = data.symbolFrom.replace('#', '').toUpperCase();
-    return `⚖️ #${symbolFrom} ${getTradeType(symbolFrom)} на ${data.amount} #${data.symbol} ${getBigNumber(data.amount)} #${symbol}\n${getAgo(new Date(data.createdAt))}`
+    return `⚖️ #${symbolFrom} ${getTradeType(symbolFrom)} for ${data.amount} #${data.symbol} ${getBigNumber(data.amount)} #${symbol}\n${getAgo(new Date(data.createdAt))}`
 }

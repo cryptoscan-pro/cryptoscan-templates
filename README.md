@@ -4,8 +4,8 @@
 This project contains template files for formatting cryptocurrency market data alerts for a Telegram bot. The templates handle different types of market events:
 
 - Price movements (`prices.js`)
-- Trading volume changes (`trades.js`) 
-- Token transfers (`transfers.js`)
+- Trading volume changes (`trades-ru.js`) 
+- Token transfers (`transfers-ru.js`)
 
 ## Template Structure
 Each template file follows a similar pattern:

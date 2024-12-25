@@ -95,7 +95,7 @@ export function getExchangeUrl(exchange, to, from) {
 }
 
 export default function (data) {
-    const type = data.variant === 'long' ? 'ЛОНГ 📉' : 'ШОРТ 📈';
+    const type = data.variant === 'long' ? 'LONG 📉' : 'SHORT 📈';
     const symbol = data.symbol.replace('$', '').replace('#', '').toUpperCase();
-    return `💥 Ликвидирован #${symbol} ${type} на ${getBigNumber(data.usd)} USDT на [${data.exchange}](${getExchangeUrl(data.exchange, symbol, 'USDT')}) при цене $${data.price}`
+    return `💥 Liquidated #${symbol} ${type} на ${getBigNumber(data.usd)} USDT for [${data.exchange}](${getExchangeUrl(data.exchange, symbol, 'USDT')}) при цене $${data.price}`
 }
