@@ -341,7 +341,8 @@
                 "type": "arbitrage",
                 "variant": "cex-cex",
                 "minSpread": "5",
-                "minTotalBuyUSD": "10"
+                "minTotalBuyUSD": "10",
+                "maxTotalBuyUSD": "100"
             },
             "destination": {
                 "type": "channel",
@@ -358,7 +359,8 @@
                 "type": "arbitrage",
                 "variant": "cex-cex",
                 "minSpread": "5",
-                "minTotalBuyUSD": "100"
+                "minTotalBuyUSD": "100",
+                "maxTotalBuyUSD": "1000"
             },
             "destination": {
                 "type": "channel",
@@ -449,7 +451,8 @@
             "name": "dexarbitrage10",
             "query": {
                 "type": "arbitrage",
-                "minTotalBuyUSD": 10
+                "minTotalBuyUSD": 10,
+                "maxTotalBuyUSD": 100
             },
             "destination": {
                 "type": "channel",
@@ -464,7 +467,8 @@
             "name": "dexarbitrage100",
             "query": {
                 "type": "arbitrage",
-                "minTotalBuyUSD": 100
+                "minTotalBuyUSD": 100,
+                "maxTotalBuyUSD": 1000
             },
             "destination": {
                 "type": "channel",
@@ -958,7 +962,8 @@
                 "type": "arbitrage",
                 "variant": "cex-cex",
                 "minSpread": "5",
-                "minTotalBuyUSD": "10"
+                "minTotalBuyUSD": "10",
+                "maxTotalBuyUSD": "100"
             },
             "destination": {
                 "type": "channel",
@@ -977,7 +982,8 @@
                 "type": "arbitrage",
                 "variant": "cex-cex",
                 "minSpread": "5",
-                "minTotalBuyUSD": "100"
+                "minTotalBuyUSD": "100",
+                "maxTotalBuyUSD": "1000"
             },
             "destination": {
                 "type": "channel",
@@ -1064,7 +1070,8 @@
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0,
-                "minTotalBuyUSD": 10
+                "minTotalBuyUSD": 10,
+                "maxTotalBuyUSD": 100
             },
             "destination": {
                 "type": "channel",
@@ -1083,7 +1090,8 @@
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0,
-                "minTotalBuyUSD": 100
+                "minTotalBuyUSD": 100,
+                "maxTotalBuyUSD": 1000
             },
             "destination": {
                 "type": "channel",
@@ -1558,7 +1566,8 @@
                 "type": "arbitrage",
                 "variant": "cex-cex",
                 "minSpread": "5",
-                "minTotalBuyUSD": "10"
+                "minTotalBuyUSD": "10",
+                "maxTotalBuyUSD": 1000
             },
             "destination": {
                 "type": "channel",
@@ -1575,7 +1584,8 @@
                 "type": "arbitrage",
                 "variant": "cex-cex",
                 "minSpread": "5",
-                "minTotalBuyUSD": "100"
+                "minTotalBuyUSD": "100",
+                "maxTotalBuyUSD": 1000
             },
             "destination": {
                 "type": "channel",
@@ -1652,7 +1662,8 @@
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0,
-                "minTotalBuyUSD": 10
+                "minTotalBuyUSD": 10,
+                "maxTotalBuyUSD": 100
             },
             "destination": {
                 "type": "channel",
@@ -1668,7 +1679,8 @@
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0,
-                "minTotalBuyUSD": 100
+                "minTotalBuyUSD": 100,
+                "maxTotalBuyUSD": 1000
             },
             "destination": {
                 "type": "channel",
