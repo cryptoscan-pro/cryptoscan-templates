@@ -1,6 +1,21 @@
 {
     "pro": [
         {
+            "id": "dexfuturesarbitrage",
+            "name": "dexfuturesarbitrage",
+            "query": {
+                "type": "arbitrage",
+                "variant": "DEX-FUTURES,FUTURES-DEX"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002328090083",
+                "topicId": "26638"
+            },
+            "isActive": true,
+            "templatePath": "./var/templates/dexarbitrage.js"
+        },
+        {
             "id": "announcements",
             "query": {
                 "type": "announcements"
