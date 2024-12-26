@@ -134,6 +134,9 @@ export function getExchangeUrl(exchange, to, from) {
         case "bitmex-futures": {
             return `https://www.bitmex.com/app/trade/${to}${from}`;
         }
+        case "bingx": {
+            return `https://bingx.com/en/spot/${to}${from}/`
+        }
         default: {
             return `https://cryptoscan.pro/swap`;
         }
