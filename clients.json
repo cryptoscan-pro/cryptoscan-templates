@@ -50,7 +50,7 @@
                 "type": "prices",
                 "includes[price]": "change1m",
                 "minVolume": "300000",
-                "maxPriceChange1m": "-1"
+                "maxPriceChange1m": "-5"
             },
             "destination": {
                 "type": "channel",
@@ -169,7 +169,7 @@
                 "type": "prices",
                 "includes[price]": "change1m",
                 "minVolume": "300000",
-                "minPriceChange1m": "1"
+                "minPriceChange1m": "5"
             },
             "destination": {
                 "type": "channel",
@@ -650,7 +650,7 @@
                 "type": "prices",
                 "includes[price]": "change1m",
                 "minVolume": "300000",
-                "maxPriceChange1m": "-1"
+                "maxPriceChange1m": "-5"
             },
             "destination": {
                 "type": "channel",
@@ -783,7 +783,7 @@
                 "type": "prices",
                 "includes[price]": "change1m",
                 "minVolume": "300000",
-                "minPriceChange1m": "1"
+                "minPriceChange1m": "5"
             },
             "destination": {
                 "type": "channel",
@@ -1305,7 +1305,7 @@
                 "type": "prices",
                 "includes[price]": "change1m",
                 "minVolume": "300000",
-                "maxPriceChange1m": "-1"
+                "maxPriceChange1m": "-5"
             },
             "destination": {
                 "type": "channel",
@@ -1424,7 +1424,7 @@
                 "type": "prices",
                 "includes[price]": "change1m",
                 "minVolume": "300000",
-                "minPriceChange1m": "1"
+                "minPriceChange1m": "5"
             },
             "destination": {
                 "type": "channel",
