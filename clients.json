@@ -750,7 +750,7 @@
             "destination": {
                 "type": "channel",
                 "id": "-1002216554231",
-                "topicId": "5"
+                "topicId": "9"
             },
             "isActive": true,
             "name": "priceHigh30s",
