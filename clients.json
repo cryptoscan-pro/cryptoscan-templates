@@ -287,7 +287,7 @@
             "query": {
                 "type": "prices",
                 "includes[volume]": "change30s",
-                "minVolume": "100000",
+                "minVolume": "500000",
                 "minVolumeChange30s": "5"
             },
             "destination": {
@@ -321,7 +321,7 @@
             "query": {
                 "type": "prices",
                 "includes[volume]": "change5m",
-                "minVolume": "100000",
+                "minVolume": "500000",
                 "minVolumeChange5m": "10"
             },
             "destination": {
@@ -337,7 +337,7 @@
             "id": "volume3btc193fillj",
             "query": {
                 "type": "prices",
-                "minVolume": "100000",
+                "minVolume": "500000",
                 "includes[volume]": "change1m",
                 "minVolumeChange1m": "10"
             },
@@ -915,7 +915,7 @@
             "query": {
                 "type": "prices",
                 "includes[volume]": "change30s",
-                "minVolume": "100000",
+                "minVolume": "500000",
                 "minVolumeChange30s": "5"
             },
             "destination": {
@@ -953,7 +953,7 @@
             "query": {
                 "type": "prices",
                 "includes[volume]": "change5m",
-                "minVolume": "100000",
+                "minVolume": "500000",
                 "minVolumeChange5m": "10"
             },
             "destination": {
@@ -971,7 +971,7 @@
             "id": "volume3btc193fillj",
             "query": {
                 "type": "prices",
-                "minVolume": "100000",
+                "minVolume": "500000",
                 "includes[volume]": "change1m",
                 "minVolumeChange1m": "10"
             },
@@ -1542,7 +1542,7 @@
             "query": {
                 "type": "prices",
                 "includes[volume]": "change30s",
-                "minVolume": "100000",
+                "minVolume": "500000",
                 "minVolumeChange30s": "5"
             },
             "destination": {
@@ -1576,7 +1576,7 @@
             "query": {
                 "type": "prices",
                 "includes[volume]": "change5m",
-                "minVolume": "100000",
+                "minVolume": "500000",
                 "minVolumeChange5m": "10"
             },
             "destination": {
@@ -1592,7 +1592,7 @@
             "id": "volume3btc193fillj",
             "query": {
                 "type": "prices",
-                "minVolume": "100000",
+                "minVolume": "500000",
                 "includes[volume]": "change1m",
                 "minVolumeChange1m": "10"
             },
