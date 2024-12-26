@@ -9,7 +9,7 @@
             },
             "destination": {
                 "type": "channel",
-                "id": "-1002328090083",
+                "id": "-1002497117751",
                 "topicId": "26638"
             },
             "isActive": true,
@@ -598,6 +598,21 @@
         }
     ],
     "free_ru": [
+        {
+            "id": "dexfuturesarbitrage",
+            "name": "dexfuturesarbitrage",
+            "query": {
+                "type": "arbitrage",
+                "variant": "DEX-FUTURES,FUTURES-DEX"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002216554231",
+                "topicId": "11829"
+            },
+            "isActive": true,
+            "templatePath": "./var/templates/dexarbitrage.js"
+        },
         {
             "id": "announcements",
             "query": {
@@ -1240,6 +1255,21 @@
         }
     ],
     "free": [
+        {
+            "id": "dexfuturesarbitrage",
+            "name": "dexfuturesarbitrage",
+            "query": {
+                "type": "arbitrage",
+                "variant": "DEX-FUTURES,FUTURES-DEX"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002216554231",
+                "topicId": "4747"
+            },
+            "isActive": true,
+            "templatePath": "./var/templates/dexarbitrage.js"
+        },
         {
             "id": "announcements",
             "query": {
