@@ -107,8 +107,29 @@ function getBigNumber(value) {
     return `${value.toFixed(1).replace(/\.0$/, '')}${suffixes[index]}`;
 }
 
+function getVariantIcon(v) {
+    switch(v) {
+        case "dex-cex":
+            return "🔗🏦"
+        case "cex-cex":
+            return "🏦🏦"
+        case "cex-dex":
+            return "🏦🔗"
+        case "futures-futures":
+            return "📊📊"
+        case "futures-cex":
+            return "📊🏦"
+        case "cex-futures":
+            return "🏦📊"
+        case "dex-futures":
+            return "🔗📊"
+        case "futures-dex":
+            return "📊🔗"
+    }
+}
+
 export default function(data) {
-    const symbol = data.variant.toLowerCase() === 'dex-cex' ? '💰🔗' : '💰🏦'
+    const symbol = getVariantIcon(data.variant);
     const secondSymbol = '🚨';
     const spread = data.spread || (data.buyPriceTo / data.buyPriceFrom * 100 - 100);
     const dexScreenerUrl = `https://dexscreener.com/search?q=${data.contract}`;

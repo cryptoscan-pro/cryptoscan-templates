@@ -1,12 +1,12 @@
 {
     "pro": [
         {
-            "id": "dexfuturesarbitrage",
-            "name": "dexfuturesarbitrage",
+            "id": "futuresarbitrage",
+            "name": "futuresarbitrage",
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0.5,
-                "variant": "DEX-FUTURES,FUTURES-DEX,CEX-FUTURES,FUTURES-CEX"
+                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,futures-cex,futures-futures"
             },
             "destination": {
                 "type": "channel",
@@ -410,10 +410,11 @@
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
-            "id": "dexarbitrage10",
-            "name": "dexarbitrage10",
+            "id": "arbitrage10",
+            "name": "arbitrage10",
             "query": {
                 "type": "arbitrage",
+                "variant": "dex-cex,cex-dex,cex-cex",
                 "minSpread": 5,
                 "minTotalBuyUSD": 10,
                 "maxTotalBuyUSD": 100
@@ -427,10 +428,11 @@
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
-            "id": "dexarbitrage100",
-            "name": "dexarbitrage100",
+            "id": "arbitrage100",
+            "name": "arbitrage100",
             "query": {
                 "type": "arbitrage",
+                "variant": "dex-cex,cex-dex,cex-cex",
                 "minSpread": 1,
                 "minTotalBuyUSD": 100,
                 "maxTotalBuyUSD": 1000
@@ -444,10 +446,11 @@
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
-            "id": "dexarbitrage1000",
-            "name": "dexarbitrage1000",
+            "id": "arbitrage1000",
+            "name": "arbitrage1000",
             "query": {
                 "type": "arbitrage",
+                "variant": "dex-cex,cex-dex,cex-cex",
                 "minSpread": 1,
                 "minTotalBuyUSD": 1000
             },
@@ -555,7 +558,7 @@
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0.5,
-                "variant": "DEX-FUTURES,FUTURES-DEX,CEX-FUTURES,FUTURES-CEX"
+                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,futures-cex,futures-futures"
             },
             "destination": {
                 "type": "channel",
@@ -988,10 +991,11 @@
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
-            "id": "dexarbitrage10",
-            "name": "dexarbitrage10",
+            "id": "arbitrage10",
+            "name": "arbitrage10",
             "query": {
                 "type": "arbitrage",
+                "variant": "dex-cex,cex-dex,cex-cex",
                 "minSpread": 5,
                 "minTotalBuyUSD": 10,
                 "maxTotalBuyUSD": 100
@@ -1008,10 +1012,11 @@
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
-            "id": "dexarbitrage100",
-            "name": "dexarbitrage100",
+            "id": "arbitrage100",
+            "name": "arbitrage100",
             "query": {
                 "type": "arbitrage",
+                "variant": "dex-cex,cex-dex,cex-cex",
                 "minSpread": 1,
                 "minTotalBuyUSD": 100,
                 "maxTotalBuyUSD": 1000
@@ -1028,10 +1033,11 @@
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
-            "id": "dexarbitrage1000",
-            "name": "dexarbitrage1000",
+            "id": "arbitrage1000",
+            "name": "arbitrage1000",
             "query": {
                 "type": "arbitrage",
+                "variant": "dex-cex,cex-dex,cex-cex",
                 "minSpread": 1,
                 "minTotalBuyUSD": 1000
             },
@@ -1154,7 +1160,7 @@
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0.5,
-                "variant": "DEX-FUTURES,FUTURES-DEX,CEX-FUTURES,FUTURES-CEX"
+                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,futures-cex,futures-futures"
             },
             "destination": {
                 "type": "channel",
@@ -1543,10 +1549,11 @@
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
-            "id": "dexarbitrage10",
-            "name": "dexarbitrage10",
+            "id": "arbitrage10",
+            "name": "arbitrage10",
             "query": {
                 "type": "arbitrage",
+                "variant": "dex-cex,cex-dex,cex-cex",
                 "minSpread": 5,
                 "minTotalBuyUSD": 10,
                 "maxTotalBuyUSD": 100
@@ -1560,10 +1567,11 @@
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
-            "id": "dexarbitrage100",
-            "name": "dexarbitrage100",
+            "id": "arbitrage100",
+            "name": "arbitrage100",
             "query": {
                 "type": "arbitrage",
+                "variant": "dex-cex,cex-dex,cex-cex",
                 "minSpread": 1,
                 "minTotalBuyUSD": 100,
                 "maxTotalBuyUSD": 1000
@@ -1577,10 +1585,11 @@
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
-            "id": "dexarbitrage1000",
-            "name": "dexarbitrage1000",
+            "id": "arbitrage1000",
+            "name": "arbitrage1000",
             "query": {
                 "type": "arbitrage",
+                "variant": "dex-cex,cex-dex,cex-cex",
                 "minSpread": 1,
                 "minTotalBuyUSD": 1000
             },
