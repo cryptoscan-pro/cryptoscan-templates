@@ -351,59 +351,6 @@
             "templatePath": "./var/templates/volumes.js"
         },
         {
-            "id": "1a1193fil01",
-            "query": {
-                "type": "arbitrage",
-                "variant": "cex-cex",
-                "minSpread": "5",
-                "minTotalBuyUSD": "10",
-                "maxTotalBuyUSD": "100"
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002497117751",
-                "topicId": "13"
-            },
-            "isActive": true,
-            "name": "arbitrageCexCex10",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
-        },
-        {
-            "id": "2a1193fil01",
-            "query": {
-                "type": "arbitrage",
-                "variant": "cex-cex",
-                "minSpread": "5",
-                "minTotalBuyUSD": "100",
-                "maxTotalBuyUSD": "1000"
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002497117751",
-                "topicId": "12"
-            },
-            "isActive": true,
-            "name": "arbitrageCexCex100",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
-        },
-        {
-            "id": "3a1193fil01",
-            "query": {
-                "type": "arbitrage",
-                "variant": "cex-cex",
-                "minSpread": "5",
-                "minTotalBuyUSD": "1000"
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002497117751",
-                "topicId": "11"
-            },
-            "isActive": true,
-            "name": "arbitrageCexCex1000",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
-        },
-        {
             "id": "2455j3fhyma",
             "query": {
                 "type": "liquidations"
@@ -466,6 +413,7 @@
             "name": "dexarbitrage10",
             "query": {
                 "type": "arbitrage",
+                "minSpread": 1,
                 "minTotalBuyUSD": 10,
                 "maxTotalBuyUSD": 100
             },
@@ -482,6 +430,7 @@
             "name": "dexarbitrage100",
             "query": {
                 "type": "arbitrage",
+                "minSpread": 1,
                 "minTotalBuyUSD": 100,
                 "maxTotalBuyUSD": 1000
             },
@@ -498,6 +447,7 @@
             "name": "dexarbitrage1000",
             "query": {
                 "type": "arbitrage",
+                "minSpread": 1,
                 "minTotalBuyUSD": 1000
             },
             "destination": {
@@ -987,65 +937,6 @@
             "templatePath": "./var/templates/volumes-ru.js"
         },
         {
-            "id": "1a1193fil01",
-            "query": {
-                "type": "arbitrage",
-                "variant": "cex-cex",
-                "minSpread": "5",
-                "minTotalBuyUSD": "10",
-                "maxTotalBuyUSD": "100"
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002216554231",
-                "topicId": "13"
-            },
-            "isActive": true,
-            "name": "arbitrageCexCex10",
-            "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
-        },
-        {
-            "id": "2a1193fil01",
-            "query": {
-                "type": "arbitrage",
-                "variant": "cex-cex",
-                "minSpread": "5",
-                "minTotalBuyUSD": "100",
-                "maxTotalBuyUSD": "1000"
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002216554231",
-                "topicId": "12"
-            },
-            "isActive": true,
-            "name": "arbitrageCexCex100",
-            "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
-        },
-        {
-            "id": "3a1193fil01",
-            "query": {
-                "type": "arbitrage",
-                "variant": "cex-cex",
-                "minSpread": "5",
-                "minTotalBuyUSD": "1000"
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002216554231",
-                "topicId": "11"
-            },
-            "isActive": true,
-            "name": "arbitrageCexCex1000",
-            "delay": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
-        },
-        {
             "id": "2455j3fhyma",
             "query": {
                 "type": "liquidations"
@@ -1099,7 +990,7 @@
             "name": "dexarbitrage10",
             "query": {
                 "type": "arbitrage",
-                "minSpread": 0,
+                "minSpread": 1,
                 "minTotalBuyUSD": 10,
                 "maxTotalBuyUSD": 100
             },
@@ -1119,7 +1010,7 @@
             "name": "dexarbitrage100",
             "query": {
                 "type": "arbitrage",
-                "minSpread": 0,
+                "minSpread": 1,
                 "minTotalBuyUSD": 100,
                 "maxTotalBuyUSD": 1000
             },
@@ -1139,7 +1030,7 @@
             "name": "dexarbitrage1000",
             "query": {
                 "type": "arbitrage",
-                "minSpread": 0,
+                "minSpread": 1,
                 "minTotalBuyUSD": 1000
             },
             "destination": {
@@ -1606,59 +1497,6 @@
             "templatePath": "./var/templates/volumes.js"
         },
         {
-            "id": "1a1193fil01",
-            "query": {
-                "type": "arbitrage",
-                "variant": "cex-cex",
-                "minSpread": "5",
-                "minTotalBuyUSD": "10",
-                "maxTotalBuyUSD": 1000
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002328090083",
-                "topicId": "13"
-            },
-            "isActive": true,
-            "name": "arbitrageCexCex10",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
-        },
-        {
-            "id": "2a1193fil01",
-            "query": {
-                "type": "arbitrage",
-                "variant": "cex-cex",
-                "minSpread": "5",
-                "minTotalBuyUSD": "100",
-                "maxTotalBuyUSD": 1000
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002328090083",
-                "topicId": "12"
-            },
-            "isActive": true,
-            "name": "arbitrageCexCex100",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
-        },
-        {
-            "id": "3a1193fil01",
-            "query": {
-                "type": "arbitrage",
-                "variant": "cex-cex",
-                "minSpread": "5",
-                "minTotalBuyUSD": "1000"
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002328090083",
-                "topicId": "11"
-            },
-            "isActive": true,
-            "name": "arbitrageCexCex1000",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex-cex arbitrage - Send only message result with no comments. No comments, message content only"
-        },
-        {
             "id": "2455j3fhyma",
             "query": {
                 "type": "liquidations"
@@ -1706,7 +1544,7 @@
             "name": "dexarbitrage10",
             "query": {
                 "type": "arbitrage",
-                "minSpread": 0,
+                "minSpread": 1,
                 "minTotalBuyUSD": 10,
                 "maxTotalBuyUSD": 100
             },
@@ -1723,7 +1561,7 @@
             "name": "dexarbitrage100",
             "query": {
                 "type": "arbitrage",
-                "minSpread": 0,
+                "minSpread": 1,
                 "minTotalBuyUSD": 100,
                 "maxTotalBuyUSD": 1000
             },
@@ -1740,7 +1578,7 @@
             "name": "dexarbitrage1000",
             "query": {
                 "type": "arbitrage",
-                "minSpread": 0,
+                "minSpread": 1,
                 "minTotalBuyUSD": 1000
             },
             "destination": {
