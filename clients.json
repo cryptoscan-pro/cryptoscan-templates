@@ -5,7 +5,8 @@
             "name": "dexfuturesarbitrage",
             "query": {
                 "type": "arbitrage",
-                "variant": "DEX-FUTURES,FUTURES-DEX"
+                "minSpread": 0.5,
+                "variant": "DEX-FUTURES,FUTURES-DEX,CEX-FUTURES,FUTURES-CEX"
             },
             "destination": {
                 "type": "channel",
@@ -413,7 +414,7 @@
             "name": "dexarbitrage10",
             "query": {
                 "type": "arbitrage",
-                "minSpread": 1,
+                "minSpread": 5,
                 "minTotalBuyUSD": 10,
                 "maxTotalBuyUSD": 100
             },
@@ -553,7 +554,8 @@
             "name": "dexfuturesarbitrage",
             "query": {
                 "type": "arbitrage",
-                "variant": "DEX-FUTURES,FUTURES-DEX"
+                "minSpread": 0.5,
+                "variant": "DEX-FUTURES,FUTURES-DEX,CEX-FUTURES,FUTURES-CEX"
             },
             "destination": {
                 "type": "channel",
@@ -990,7 +992,7 @@
             "name": "dexarbitrage10",
             "query": {
                 "type": "arbitrage",
-                "minSpread": 1,
+                "minSpread": 5,
                 "minTotalBuyUSD": 10,
                 "maxTotalBuyUSD": 100
             },
@@ -1147,11 +1149,12 @@
     ],
     "free": [
         {
-            "id": "dexfuturesarbitrage",
-            "name": "dexfuturesarbitrage",
+            "id": "futuresarbitrage",
+            "name": "futuresarbitrage",
             "query": {
                 "type": "arbitrage",
-                "variant": "DEX-FUTURES,FUTURES-DEX"
+                "minSpread": 0.5,
+                "variant": "DEX-FUTURES,FUTURES-DEX,CEX-FUTURES,FUTURES-CEX"
             },
             "destination": {
                 "type": "channel",
@@ -1544,7 +1547,7 @@
             "name": "dexarbitrage10",
             "query": {
                 "type": "arbitrage",
-                "minSpread": 1,
+                "minSpread": 5,
                 "minTotalBuyUSD": 10,
                 "maxTotalBuyUSD": 100
             },
