@@ -125,6 +125,8 @@ function getVariantIcon(v) {
             return "🔗📊"
         case "futures-dex":
             return "📊🔗"
+        case "dex-dex":
+            return "🔗🔗"
     }
 }
 
