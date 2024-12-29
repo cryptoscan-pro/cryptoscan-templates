@@ -7,7 +7,7 @@
                 "type": "arbitrage",
                 "minSpread": 0.5,
                 "minTotalBuyUSD": 100,
-                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,futures-cex,futures-futures"
+                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,,futures-futures"
             },
             "destination": {
                 "type": "channel",
@@ -560,7 +560,7 @@
                 "type": "arbitrage",
                 "minSpread": 0.5,
                 "minTotalBuyUSD": 100,
-                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,futures-cex,futures-futures"
+                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,,futures-futures"
             },
             "destination": {
                 "type": "channel",
@@ -1163,7 +1163,7 @@
                 "type": "arbitrage",
                 "minSpread": 0.5,
                 "minTotalBuyUSD": 100,
-                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,futures-cex,futures-futures"
+                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,,futures-futures"
             },
             "destination": {
                 "type": "channel",
