@@ -108,7 +108,7 @@ function getBigNumber(value) {
 }
 
 function getVariantIcon(v) {
-    switch(v) {
+    switch(v.toLowerCase()) {
         case "dex-cex":
             return "🔗🏦"
         case "cex-cex":
