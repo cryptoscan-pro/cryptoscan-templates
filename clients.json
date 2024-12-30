@@ -6,7 +6,6 @@
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0.5,
-                "minTotalBuyUSD": 100,
                 "variant": "bridge"
             },
             "destination": {
@@ -577,7 +576,6 @@
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0.5,
-                "minTotalBuyUSD": 100,
                 "variant": "bridge"
             },
             "destination": {
@@ -1198,7 +1196,6 @@
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0.5,
-                "minTotalBuyUSD": 100,
                 "variant": "bridge"
             },
             "destination": {
