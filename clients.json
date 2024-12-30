@@ -1043,8 +1043,7 @@
             "destination": {
                 "type": "channel",
                 "id": "-1002216554231",
-                "minSpread": 0,
-                "topicId": "13"
+                "topicId": "14"
             },
             "isActive": true,
             "timeout": 300000,
@@ -1064,8 +1063,7 @@
             "destination": {
                 "type": "channel",
                 "id": "-1002216554231",
-                "minSpread": 0,
-                "topicId": "12"
+                "topicId": "13"
             },
             "isActive": true,
             "timeout": 300000,
@@ -1084,7 +1082,7 @@
             "destination": {
                 "type": "channel",
                 "id": "-1002216554231",
-                "topicId": "11"
+                "topicId": "12"
             },
             "isActive": true,
             "timeout": 300000,
