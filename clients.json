@@ -1,13 +1,31 @@
 {
     "pro": [
         {
+            "id": "crosschainarbitrage",
+            "name": "crosschainarbitrage",
+            "query": {
+                "type": "arbitrage",
+                "minSpread": 0.5,
+                "minTotalBuyUSD": 100,
+                "variant": "bridge"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "80788"
+            },
+            "isActive": true,
+            "timeout": 300000,
+            "templatePath": "./var/templates/bridgearbitrage.js"
+        },
+        {
             "id": "futuresarbitrage",
             "name": "futuresarbitrage",
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0.5,
                 "minTotalBuyUSD": 100,
-                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,,futures-futures"
+                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,futures-futures"
             },
             "destination": {
                 "type": "channel",
@@ -553,6 +571,24 @@
         }
     ],
     "free_ru": [
+        {
+            "id": "crosschainarbitrage",
+            "name": "crosschainarbitrage",
+            "query": {
+                "type": "arbitrage",
+                "minSpread": 0.5,
+                "minTotalBuyUSD": 100,
+                "variant": "bridge"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002216554231",
+                "topicId": "30673"
+            },
+            "isActive": true,
+            "timeout": 300000,
+            "templatePath": "./var/templates/bridgearbitrage.js"
+        },
         {
             "id": "futuresarbitrage",
             "name": "futuresarbitrage",
@@ -1159,17 +1195,35 @@
     ],
     "free": [
         {
+            "id": "crosschainarbitrage",
+            "name": "crosschainarbitrage",
+            "query": {
+                "type": "arbitrage",
+                "minSpread": 0.5,
+                "minTotalBuyUSD": 100,
+                "variant": "bridge"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002328090083",
+                "topicId": "24582"
+            },
+            "isActive": true,
+            "timeout": 300000,
+            "templatePath": "./var/templates/bridgearbitrage.js"
+        },
+        {
             "id": "futuresarbitrage",
             "name": "futuresarbitrage",
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0.5,
                 "minTotalBuyUSD": 100,
-                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,,futures-futures"
+                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,futures-futures"
             },
             "destination": {
                 "type": "channel",
-                "id": "-1002216554231",
+                "id": "-1002328090083",
                 "topicId": "4747"
             },
             "isActive": true,
