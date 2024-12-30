@@ -130,5 +130,6 @@ export default function(data) {
     const exchangeSymbol = isExchange ? '🏦' : '';
     const symbol = data.symbol.replace('#', '').toUpperCase();
     const exchange = data.exchange.replace('-', '').toLowerCase();
-    return `${exchangeSymbol}${transferSymbol} sending ${getBigNumber(data.amount)} #${symbol} from ${data.from} to ${data.to} ([${exchange}](${getExchangeUrl(exchange, symbol, 'USDT')}))\n${getAgo(new Date(data.createdAt))}`
+    const exchangeLabel = exchange ? `([${exchange}](${getExchangeUrl(exchange, symbol, 'USDT')}))` : ''
+    return `${exchangeSymbol}${transferSymbol} sending ${getBigNumber(data.amount)} #${symbol} from #${data.from.slice(0, 10)} to #${data.to.slice(0, 10)} ${exchangeLabel}\n${getAgo(new Date(data.createdAt))}`
 }
