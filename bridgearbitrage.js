@@ -132,8 +132,8 @@ function getVariantIcon(v) {
 
 export default function(data) {
     const symbol = '🔗🕳';
-    const spread = data.spread || (data.buyPriceTo / data.buyPriceFrom * 100 - 100);
+    const spread = data.spread;
     const dexScreenerUrlFrom = `https://dexscreener.com/search?q=${data.from}`;
     const dexScreenerUrlTo = `https://dexscreener.com/search?q=${data.to}`;
-    return `${symbol} **${data.variant.toUpperCase()}** #${data.symbol} +${spread.toFixed(1)}% (#${data.networkFrom.toUpperCase()} -> #${data.networkTo.toUpperCase()}) from ${data.from} to ${data.to}\n[DexScreener From](${dexScreenerUrlFrom}) | [DexScreener To](${dexScreenerUrlTo}))`
+    return `${symbol} **${data.variant.toUpperCase()}** #${data.symbol.toLowerCase()} +${spread.toFixed(1)}% (#${data.networkFrom.toUpperCase()} -> #${data.networkTo.toUpperCase()}) from ${data.from} to ${data.to}\n[DexScreener From](${dexScreenerUrlFrom}) | [DexScreener To](${dexScreenerUrlTo}))`
 }

@@ -498,7 +498,8 @@
             "id": "trending",
             "name": "trending",
             "query": {
-                "type": "trending"
+                "type": "dca",
+                "variant": "dex"
             },
             "destination": {
                 "type": "channel",
@@ -509,8 +510,22 @@
             "templatePath": "./var/templates/dca.js"
         },
         {
-            "id": "dca",
-            "name": "dca",
+            "id": "trending",
+            "name": "trending",
+            "query": {
+                "type": "trending"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "7081"
+            },
+            "isActive": true,
+            "templatePath": "./var/templates/activity.js"
+        },
+        {
+            "id": "activity",
+            "name": "activity",
             "query": {
                 "type": "activity",
                 "variant": "dex"
@@ -1108,6 +1123,21 @@
             "id": "trending",
             "name": "trending",
             "query": {
+                "type": "dca",
+                "variant": "dex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002216554231",
+                "topicId": "9"
+            },
+            "isActive": true,
+            "templatePath": "./var/templates/dca-ru.js"
+        },
+        {
+            "id": "trending",
+            "name": "trending",
+            "query": {
                 "type": "trending"
             },
             "destination": {
@@ -1118,11 +1148,11 @@
             "isActive": true,
             "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
-            "templatePath": "./var/templates/dca-ru.js"
+            "templatePath": "./var/templates/activity-ru.js"
         },
         {
-            "id": "dca",
-            "name": "dca",
+            "id": "activity",
+            "name": "activity",
             "query": {
                 "type": "activity",
                 "variant": "dex"
@@ -1701,6 +1731,21 @@
             "id": "trending",
             "name": "trending",
             "query": {
+                "type": "dca",
+                "variant": "dex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002328090083",
+                "topicId": "10"
+            },
+            "isActive": true,
+            "templatePath": "./var/templates/dca.js"
+        },
+        {
+            "id": "trending",
+            "name": "trending",
+            "query": {
                 "type": "trending"
             },
             "destination": {
@@ -1710,11 +1755,11 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "templatePath": "./var/templates/dca.js"
+            "templatePath": "./var/templates/activity.js"
         },
         {
-            "id": "dca",
-            "name": "dca",
+            "id": "activity",
+            "name": "activity",
             "query": {
                 "type": "activity",
                 "variant": "dex"
