@@ -567,6 +567,7 @@
                 "id": "-1002216554231",
                 "topicId": "11829"
             },
+            "timeout": 300000,
             "isActive": true,
             "templatePath": "./var/templates/dexarbitrage.js"
         },
@@ -582,6 +583,7 @@
             },
             "isActive": true,
             "name": "announcements",
+            "timeout": 300000,
             "templatePath": "./var/templates/announcements.js"
         },
         {
@@ -597,7 +599,7 @@
             },
             "isActive": true,
             "name": "oi-tracker",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text about OpenInterest and describe pump or dump for telegam message with emojis. - Send only message result with no comments. No comments, message content only"
         },
@@ -616,7 +618,7 @@
             },
             "isActive": true,
             "name": "priceMiddle5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -635,7 +637,7 @@
             },
             "isActive": true,
             "name": "priceMiddle5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -654,7 +656,7 @@
             },
             "isActive": true,
             "name": "priceHigh5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -673,7 +675,7 @@
             },
             "isActive": true,
             "name": "priceHighest5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -692,7 +694,7 @@
             },
             "isActive": true,
             "name": "priceMiddle30s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -711,7 +713,7 @@
             },
             "isActive": true,
             "name": "priceHigh30s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -730,7 +732,7 @@
             },
             "isActive": true,
             "name": "priceHigh1m",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -749,7 +751,7 @@
             },
             "isActive": true,
             "name": "priceMiddle5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -768,7 +770,7 @@
             },
             "isActive": true,
             "name": "priceMiddle5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -787,7 +789,7 @@
             },
             "isActive": true,
             "name": "priceHigh5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -806,7 +808,7 @@
             },
             "isActive": true,
             "name": "priceHighest5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -825,7 +827,7 @@
             },
             "isActive": true,
             "name": "priceMiddle30s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -844,7 +846,7 @@
             },
             "isActive": true,
             "name": "priceHigh30s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -863,7 +865,7 @@
             },
             "isActive": true,
             "name": "priceHigh1m",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/prices.js"
         },
@@ -882,7 +884,7 @@
             },
             "isActive": true,
             "name": "volumeMiddle5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/trades-ru.js"
         },
@@ -901,7 +903,7 @@
             },
             "isActive": true,
             "name": "volumeMiddle5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/trades-ru.js"
         },
@@ -920,7 +922,7 @@
             },
             "isActive": true,
             "name": "volumeMiddle5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/trades-ru.js"
         },
@@ -939,7 +941,7 @@
             },
             "isActive": true,
             "name": "volumeMiddle5s",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/volumes-ru.js"
         },
@@ -955,7 +957,7 @@
             },
             "isActive": true,
             "name": "liquidations",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/liquidations.js"
         },
@@ -971,7 +973,7 @@
             },
             "isActive": false,
             "name": "networks",
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
@@ -988,7 +990,7 @@
                 "topicId": "4"
             },
             "isActive": true,
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
@@ -1009,7 +1011,7 @@
                 "topicId": "13"
             },
             "isActive": true,
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
@@ -1030,7 +1032,7 @@
                 "topicId": "12"
             },
             "isActive": true,
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
@@ -1049,7 +1051,7 @@
                 "topicId": "11"
             },
             "isActive": true,
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
@@ -1065,7 +1067,7 @@
                 "topicId": "232"
             },
             "isActive": true,
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiModel": "qwen/qwen-2-7b-instruct",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate text to russian"
@@ -1082,7 +1084,7 @@
                 "topicId": "9"
             },
             "isActive": true,
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dca-ru.js"
         },
@@ -1099,7 +1101,7 @@
                 "topicId": "9"
             },
             "isActive": true,
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/activity-ru.js"
         },
@@ -1116,7 +1118,7 @@
                 "topicId": "8"
             },
             "isActive": true,
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
         },
@@ -1133,7 +1135,7 @@
                 "topicId": "8"
             },
             "isActive": true,
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
         },
@@ -1150,7 +1152,7 @@
                 "topicId": "9"
             },
             "isActive": true,
-            "delay": 300000,
+            "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/transfers-ru.js"
         }
@@ -1171,6 +1173,7 @@
                 "topicId": "4747"
             },
             "isActive": true,
+            "timeout": 300000,
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -1185,6 +1188,7 @@
             },
             "isActive": true,
             "name": "announcements",
+            "timeout": 300000,
             "templatePath": "./var/templates/announcements.js"
         },
         {
@@ -1200,6 +1204,7 @@
             },
             "isActive": true,
             "name": "oi-tracker",
+            "timeout": 300000,
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text about OpenInterest and describe pump or dump for telegam message with emojis. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1217,6 +1222,7 @@
             },
             "isActive": true,
             "name": "priceMiddle5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1234,6 +1240,7 @@
             },
             "isActive": true,
             "name": "priceMiddle5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1251,6 +1258,7 @@
             },
             "isActive": true,
             "name": "priceHigh5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1268,6 +1276,7 @@
             },
             "isActive": true,
             "name": "priceHighest5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1285,6 +1294,7 @@
             },
             "isActive": true,
             "name": "priceMiddle30s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1302,6 +1312,7 @@
             },
             "isActive": true,
             "name": "priceHigh30s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1319,6 +1330,7 @@
             },
             "isActive": true,
             "name": "priceHigh1m",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1336,6 +1348,7 @@
             },
             "isActive": true,
             "name": "priceMiddle5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1353,6 +1366,7 @@
             },
             "isActive": true,
             "name": "priceMiddle5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1370,6 +1384,7 @@
             },
             "isActive": true,
             "name": "priceHigh5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1387,6 +1402,7 @@
             },
             "isActive": true,
             "name": "priceHighest5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1404,6 +1420,7 @@
             },
             "isActive": true,
             "name": "priceMiddle30s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1421,6 +1438,7 @@
             },
             "isActive": true,
             "name": "priceHigh30s",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1438,6 +1456,7 @@
             },
             "isActive": true,
             "name": "priceHigh1m",
+            "timeout": 300000,
             "templatePath": "./var/templates/prices.js"
         },
         {
@@ -1455,6 +1474,7 @@
             },
             "isActive": true,
             "name": "volumeMiddle5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/trades.js"
         },
         {
@@ -1472,6 +1492,7 @@
             },
             "isActive": true,
             "name": "volumeMiddle5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/trades.js"
         },
         {
@@ -1489,6 +1510,7 @@
             },
             "isActive": true,
             "name": "volumeMiddle5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/trades.js"
         },
         {
@@ -1506,6 +1528,7 @@
             },
             "isActive": true,
             "name": "volumeMiddle5s",
+            "timeout": 300000,
             "templatePath": "./var/templates/volumes.js"
         },
         {
@@ -1520,6 +1543,7 @@
             },
             "isActive": true,
             "name": "liquidations",
+            "timeout": 300000,
             "templatePath": "./var/templates/liquidations.js"
         },
         {
@@ -1534,6 +1558,7 @@
             },
             "isActive": false,
             "name": "networks",
+            "timeout": 300000,
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1549,6 +1574,7 @@
                 "topicId": "6"
             },
             "isActive": true,
+            "timeout": 300000,
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1567,6 +1593,7 @@
                 "topicId": "13"
             },
             "isActive": true,
+            "timeout": 300000,
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -1585,6 +1612,7 @@
                 "topicId": "12"
             },
             "isActive": true,
+            "timeout": 300000,
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -1602,6 +1630,7 @@
                 "topicId": "11"
             },
             "isActive": true,
+            "timeout": 300000,
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -1616,6 +1645,7 @@
                 "topicId": "5"
             },
             "isActive": true,
+            "timeout": 300000,
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate text to russian"
         },
         {
@@ -1630,6 +1660,7 @@
                 "topicId": "10"
             },
             "isActive": true,
+            "timeout": 300000,
             "templatePath": "./var/templates/dca.js"
         },
         {
@@ -1645,6 +1676,7 @@
                 "topicId": "10"
             },
             "isActive": true,
+            "timeout": 300000,
             "templatePath": "./var/templates/activity.js"
         },
         {
@@ -1660,6 +1692,7 @@
                 "topicId": "9"
             },
             "isActive": true,
+            "timeout": 300000,
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1675,6 +1708,7 @@
                 "topicId": "9"
             },
             "isActive": true,
+            "timeout": 300000,
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -1690,6 +1724,7 @@
                 "topicId": "10"
             },
             "isActive": true,
+            "timeout": 300000,
             "templatePath": "./var/templates/transfers.js"
         }
     ]
