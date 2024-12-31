@@ -1,4 +1,20 @@
 {
+    "news": [
+        {
+            "id": "news",
+            "name": "news",
+            "query": {
+                "type": "news"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002303989656"
+            },
+            "isActive": true,
+            "timeout": 300000,
+            "templatePath": "./var/templates/bridgearbitrage.js"
+        }
+    ],
     "pro": [
         {
             "id": "crosschainarbitrage",
