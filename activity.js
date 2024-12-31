@@ -99,7 +99,7 @@ export function getExchangeUrl(exchange, to, from) {
 
 function getTradeType(from) {
     const baseCoins = ['USDT', 'USDC', 'WETH', 'ETH']
-    if (baseCoins.includes(from)) {
+    if (from && baseCoins.includes(from)) {
         return 'selling 🧨'
     }
 
@@ -132,6 +132,7 @@ export function getAgo(date) {
 
 export default function(data) {
     const symbol = data.symbol.replace('#', '').toUpperCase();
+    const symbolFrom = data.symbolFrom?.replace('#', '')?.toUpperCase();
     const contract = data.contract ? '#' + data.contract.slice(0, 5) : '';
-    return `⚖️ #${symbolFrom} ${getTradeType(symbolFrom)} for ${data.amount} #${symbol} ${getBigNumber(data.amount)} #${symbol} ${contract}\n${getAgo(new Date(data.createdAt))}`
+    return `⚖️ #${symbolFrom} ${getTradeType()} for ${data.amount} #${symbol} ${getBigNumber(data.amount)} #${symbol} ${contract}\n${getAgo(new Date(data.createdAt))}`
 }
