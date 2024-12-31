@@ -132,7 +132,7 @@ export function getAgo(date) {
 
 export default function(data) {
     const symbol = data.symbol.replace('#', '').toUpperCase();
-    const symbolFrom = data.symbolFrom?.replace('#', '')?.toUpperCase();
+    const symbolFrom = data.symbolFrom ? ' #' + data.symbolFrom?.replace('#', '')?.toUpperCase() : '';
     const contract = data.contract ? '#' + data.contract.slice(0, 5) : '';
-    return `⚖️ #${symbolFrom} ${getTradeType()} for ${data.amount} #${symbol} ${getBigNumber(data.amount)} #${symbol} ${contract}\n${getAgo(new Date(data.createdAt))}`
+    return `⚖️${symbolFrom} ${getTradeType(symbolFrom.trim().replace('#', ''))} for ${data.amount} #${symbol} ${getBigNumber(data.amount)} #${symbol} ${contract}\n${getAgo(new Date(data.createdAt))}`
 }
