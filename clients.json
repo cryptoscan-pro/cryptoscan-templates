@@ -10,9 +10,9 @@
                 "type": "channel",
                 "id": "-1002303989656"
             },
-            "isActive": true,
             "timeout": 300000,
-            "templatePath": "./var/templates/bridgearbitrage.js"
+            "isActive": true,
+            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate text to russian"
         }
     ],
     "pro": [
