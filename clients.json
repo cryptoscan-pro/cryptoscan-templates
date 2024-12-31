@@ -49,6 +49,20 @@
             "templatePath": "./var/templates/announcements.js"
         },
         {
+            "id": "etf5a5t53f1ywe",
+            "query": {
+                "type": "etf"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "9"
+            },
+            "isActive": true,
+            "name": "etf",
+            "templatePath": "./var/templates/etf.js"
+        },
+        {
             "id": "5a5t53f1ywe",
             "query": {
                 "type": "oi",
@@ -634,6 +648,20 @@
             "name": "announcements",
             "timeout": 300000,
             "templatePath": "./var/templates/announcements.js"
+        },
+        {
+            "id": "etf5a5t53f1ywe",
+            "query": {
+                "type": "etf"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002216554231",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "etf",
+            "templatePath": "./var/templates/etf.js"
         },
         {
             "id": "5a5t53f1ywe",
@@ -1284,6 +1312,20 @@
             "name": "announcements",
             "timeout": 300000,
             "templatePath": "./var/templates/announcements.js"
+        },
+        {
+            "id": "etf5a5t53f1ywe",
+            "query": {
+                "type": "etf"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002328090083",
+                "topicId": "9"
+            },
+            "isActive": true,
+            "name": "etf",
+            "templatePath": "./var/templates/etf.js"
         },
         {
             "id": "5a5t53f1ywe",
