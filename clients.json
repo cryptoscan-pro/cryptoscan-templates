@@ -401,7 +401,8 @@
         {
             "id": "2455j3fhyma",
             "query": {
-                "type": "liquidations"
+                "type": "liquidations",
+                "variant": "cex"
             },
             "destination": {
                 "type": "channel",
@@ -522,6 +523,21 @@
             },
             "isActive": true,
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate text to russian"
+        },
+        {
+            "id": "2455j3fhyma",
+            "query": {
+                "type": "liquidations",
+                "variant": "dex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "7081"
+            },
+            "isActive": true,
+            "name": "liquidations",
+            "templatePath": "./var/templates/liquidations.js"
         },
         {
             "id": "dca",
@@ -1040,7 +1056,8 @@
         {
             "id": "2455j3fhyma",
             "query": {
-                "type": "liquidations"
+                "type": "liquidations",
+                "variant": "cex"
             },
             "destination": {
                 "type": "channel",
@@ -1161,6 +1178,23 @@
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
             "aiModel": "qwen/qwen-2-7b-instruct",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate text to russian"
+        },
+        {
+            "id": "2455j3fhyma",
+            "query": {
+                "type": "liquidations",
+                "variant": "dex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002216554231",
+                "topicId": "9"
+            },
+            "isActive": true,
+            "name": "liquidations",
+            "timeout": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "templatePath": "./var/templates/liquidations.js"
         },
         {
             "id": "trending",
@@ -1685,7 +1719,8 @@
         {
             "id": "2455j3fhyma",
             "query": {
-                "type": "liquidations"
+                "type": "liquidations",
+                "variant": "cex"
             },
             "destination": {
                 "type": "channel",
@@ -1798,6 +1833,21 @@
             "isActive": true,
             "timeout": 300000,
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate text to russian"
+        },
+        {
+            "id": "2455j3fhyma",
+            "query": {
+                "type": "liquidations",
+                "variant": "dex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002216554231",
+                "topicId": "8"
+            },
+            "isActive": true,
+            "name": "liquidations",
+            "templatePath": "./var/templates/liquidations.js"
         },
         {
             "id": "dca",
