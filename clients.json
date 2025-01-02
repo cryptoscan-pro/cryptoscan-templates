@@ -1197,8 +1197,8 @@
             "templatePath": "./var/templates/liquidations.js"
         },
         {
-            "id": "trending",
-            "name": "trending",
+            "id": "dca",
+            "name": "dca",
             "query": {
                 "type": "dca",
                 "variant": "dex"
