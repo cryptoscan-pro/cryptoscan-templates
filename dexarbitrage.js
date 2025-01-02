@@ -76,7 +76,7 @@ export function getExchangeUrl(exchange, to, from) {
             return `https://bingx.com/en/spot/${to}${from}/`
         }
         default: {
-            return `https://cryptoscan.pro`;
+            return `https://dexscreener.com/search?q=${to}`;
         }
     }
 }
