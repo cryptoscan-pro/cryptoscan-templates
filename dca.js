@@ -125,8 +125,8 @@ export default function(data) {
     const label = data.change > 0 ? '📉' : '📈';
     const type = data.change > 0 ? 'pumping' : 'dumping';
     const symbol = data.symbol?.replace('#', '').replace('$', '').toUpperCase();
-    const dexScreenerUrl = `https://dexscreener.com/search?q=${data.contract || symbol}`;
-    const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${data.contract || symbol}/`;
+    const dexScreenerUrl = `https://dexscreener.com/search?q=${(data.contract || symbol).replaceAll(' ', '')}`;
+    const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${(data.contract || symbol).replaceAll(' ', '')}/`;
     const reference = data.reference ? `#${data.reference}` : '';
     const contract = data.contract ? (data.contract.startsWith('http') ? data.contract : `#${data.contract?.replace('-', '')?.replace(' ', '')}`) : ''
     const amount = !!data?.amount ? (getBigNumber(data.amount) + ' ') : '';
