@@ -100,5 +100,8 @@ export function getExchangeUrl(exchange, to, from) {
 export default function (data) {
     const type = data.variant === 'long' ? 'LONG 📉' : 'SHORT 📈';
     const symbol = data.symbol.replace('$', '').replace('#', '').toUpperCase();
-    return `💥 Liquidated #${symbol} ${type} на ${getBigNumber(data.usd)} USDT for [${data.exchange}](${getExchangeUrl(data.exchange, symbol, 'USDT')}) при цене $${data.price}`
+    const protocol = data.exchange ? `#${data.exchange} ` : '';
+    const chain = data.chain ? `#${data.chain}` : '';
+    const variant = data.variant ? `#${data.variant.toUpperCase()}` : '';
+    return `💥 Liquidated #${symbol} ${type} на ${getBigNumber(data.usd)} USDT for [${data.exchange}](${getExchangeUrl(data.exchange, symbol, 'USDT')}) при цене $${data.price}\n${protocol}${chain}${variant}`
 }
