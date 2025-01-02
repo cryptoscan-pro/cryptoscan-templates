@@ -131,5 +131,6 @@ export default function(data) {
     const contract = data.contract ? (data.contract.startsWith('http') ? data.contract : `#${data.contract?.replace('-', '')?.replace(' ', '')}`) : ''
     const amount = !!data?.amount ? (getBigNumber(data.amount) + ' ') : '';
     const repeat = data.duration ? ` (повторяется: ${data.duration})` : '';
-    return `️${label} DCA: #${symbol} ${type} на ${data.change}% за ${data.interval}${repeat} #${data.symbol} ${amount}#${symbol}\n${getAgo(new Date(data.createdAt))} ${reference} ${contract}\n[DEX Screener](${dexScreenerUrl}) | [CoinMarketCap](${coinMarketCapUrl})`
+    const interval = data.interval ? ` за ${data.interval}${repeat}` : ''
+    return `️${label} DCA: #${symbol} ${type} на ${data.change}%${interval} #${data.symbol} ${amount}#${symbol}\n${getAgo(new Date(data.createdAt))} ${reference} ${contract}\n[DEX Screener](${dexScreenerUrl}) | [CoinMarketCap](${coinMarketCapUrl})`
 }
