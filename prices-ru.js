@@ -29,20 +29,20 @@ function parsePriceChanges(obj) {
             let intervalText;
             switch (interval) {
                 case 's':
-                    intervalText = 'sec';
+                    intervalText = 'сек';
                     break;
                 case 'm':
-                    intervalText = 'min';
+                    intervalText = 'мин';
                     break;
                 case 'h':
-                    intervalText = 'h';
+                    intervalText = 'ч';
                     break;
                 default:
                     continue;
             }
 
             // Формируем текст для одного параметра
-            results.push({ text: `${value.toFixed(1)}% in ${number} ${intervalText}`, absValue: Math.abs(value) });
+            results.push({ text: `${value.toFixed(1)}% за ${number} ${intervalText}`, absValue: Math.abs(value) });
         }
     }
 
@@ -50,7 +50,7 @@ function parsePriceChanges(obj) {
     results.sort((a, b) => b.absValue - a.absValue);
 
     if ('change' in obj) {
-        results.push({ text: `${obj.change}% in 5 min`, absValue: 0 })
+        results.push({ text: `${obj.change}% за 5 мин`, absValue: 0 })
     }
 
     // Возвращаем только текст
@@ -167,6 +167,6 @@ export function getAgo(date) {
 export default function (data) {
     const changes = parsePriceChanges(data)
     const emoji = changes[0].startsWith('-') ? '📉' : '📈';
-    const type = changes[0].startsWith('-') ? 'dumping' : 'pumping';
-    return `${emoji} #${data?.symbol} ${type} ${changes[0]} in [${data?.exchange}](${getExchangeUrl(data?.exchange, data.symbol.toLowerCase().replace('usdt', ''), 'usdt')})\nP: ${data?.price} 24h: ${getBigNumber(data.volume)} USDT (${getAgo(new Date(data.createdAt))})\n${changes.slice(1).join(', ')}\n`
+    const type = changes[0].startsWith('-') ? 'падает' : 'растет';
+    return `${emoji} #${data?.symbol} ${type} ${changes[0]} на [${data?.exchange}](${getExchangeUrl(data?.exchange, data.symbol.toLowerCase().replace('usdt', ''), 'usdt')})\nP: ${data?.price} 24h: ${getBigNumber(data.volume)} USDT (${getAgo(new Date(data.createdAt))})\n${changes.slice(1).join(', ')}\n`
 } 
