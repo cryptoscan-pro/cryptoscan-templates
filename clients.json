@@ -652,7 +652,7 @@
             "query": {
                 "type": "arbitrage",
                 "minSpread": 0.5,
-                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,,futures-futures"
+                "variant": "DEX-FUTURES,FUTURES-DEX,cex-futures,futures-futures"
             },
             "destination": {
                 "type": "channel",

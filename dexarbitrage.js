@@ -86,4 +86,3 @@ export default function(data) {
     
     return message;
 }
-}
