@@ -1,12 +1,12 @@
-function getExchangeName(name) {
+export function getExchangeName(name) {
     switch(name.toLowerCase()) {
         case "mxc": {
-            return "mexc";
+            return "MEXC";
         }
         case "unknown": {
             return "DEX"
         }
         default:
-            return name.replace('#', '');
+            return name.replace('#', '').toUpperCase();
     }
 }
