@@ -22,7 +22,10 @@ export function getAgo(date) {
 	return `${milliseconds}ms ago`;
 }
 
-export default function(data) {
+export default function(inputObject) {
+    // Извлекаем data из входящего объекта
+    const data = inputObject.data;
+    
     const {
         symbol,
         exchange,
