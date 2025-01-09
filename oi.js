@@ -24,7 +24,7 @@ export function getAgo(date) {
 
 export default function(inputObject) {
     // Извлекаем data из входящего объекта
-    const data = inputObject.data;
+    const data = inputObject;
     
     const {
         symbol,
