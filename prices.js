@@ -1,18 +1,4 @@
-function getBigNumber(value) {
-    if (typeof value !== 'number') {
-        return '0';
-    }
-
-    const suffixes = ['', 'K', 'M', 'B'];
-    let index = 0;
-
-    while (value >= 1000 && index < suffixes.length - 1) {
-        value /= 1000;
-        index++;
-    }
-
-    return `${value.toFixed(1).replace(/\.0$/, '')}${suffixes[index]}`;
-}
+import { getBigNumber } from "./utils/getBigNumber";
 
 function parsePriceChanges(obj) {
     const regex = /^priceChange(\d+)([smh])$/;
@@ -21,11 +7,10 @@ function parsePriceChanges(obj) {
     for (const key in obj) {
         const match = key.match(regex);
         if (match) {
-            const number = match[1]; // Число из ключа
-            const interval = match[2]; // Интервал из ключа
-            const value = obj[key]; // Значение из объекта
+            const number = match[1];
+            const interval = match[2];
+            const value = obj[key]; 
 
-            // Преобразуем интервал в текст
             let intervalText;
             switch (interval) {
                 case 's':
@@ -41,19 +26,16 @@ function parsePriceChanges(obj) {
                     continue;
             }
 
-            // Формируем текст для одного параметра
             results.push({ text: `${value.toFixed(1)}% in ${number} ${intervalText}`, absValue: Math.abs(value) });
         }
     }
 
-    // Сортируем по убыванию абсолютных значений
     results.sort((a, b) => b.absValue - a.absValue);
 
     if ('change' in obj) {
         results.push({ text: `${obj.change}% in 5 min`, absValue: 0 })
     }
 
-    // Возвращаем только текст
     return results.map(result => result.text);
 }
 
@@ -168,5 +150,6 @@ export default function (data) {
     const changes = parsePriceChanges(data)
     const emoji = changes[0].startsWith('-') ? '📉' : '📈';
     const type = changes[0].startsWith('-') ? 'dumping' : 'pumping';
-    return `${emoji} #${data?.symbol} ${type} ${changes[0]} in [${data?.exchange}](${getExchangeUrl(data?.exchange, data.symbol.toLowerCase().replace('usdt', ''), 'usdt')})\nP: ${data?.price} 24h: ${getBigNumber(data.volume)} USDT (${getAgo(new Date(data.createdAt))})\n${changes.slice(1).join(', ')}\n`
+    const volume = data.volume ? `24h: ${getBigNumber(data.volume)} USDT` : '';
+    return `${emoji} #${data?.symbol} ${type} ${changes[0]} in [${data?.exchange}](${getExchangeUrl(data?.exchange, data.symbol.toLowerCase().replace('usdt', ''), 'usdt')})\nP: ${data?.price} ${volume} (${getAgo(new Date(data.createdAt))})\n${changes.slice(1).join(', ')}\n`
 } 
