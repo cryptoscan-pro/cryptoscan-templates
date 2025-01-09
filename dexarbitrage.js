@@ -33,7 +33,7 @@ export default function(data) {
     const spread = data.spread || (data.buyPriceTo / data.buyPriceFrom * 100 - 100);
     
     // Base message part
-    let message = `${symbol} **${data.variant.toUpperCase()}**`;
+    let message = `${symbol} **${data.variant.toUpperCase()}** #${data.symbol}`;
     
     // Add amount and prices if they exist (old format)
     if (data.totalBuyUSD) {
