@@ -75,6 +75,9 @@ export function getExchangeUrl(exchange, to, from) {
         case "bingx": {
             return `https://bingx.com/en/spot/${to}${from}/`
         }
+        case "coinbase": {
+            return `https://exchange.coinbase.com/trade/${to.toUpperCase()}-${from.toUpperCase()}`
+        }
         default: {
             return `https://cryptoscan.pro`;
         }
