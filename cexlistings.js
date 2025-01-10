@@ -24,7 +24,6 @@ export default function(data) {
         actionLabel = 'Listed on Futures '
         actionEmoji = '🏦'
     }
-    const pairLink = data.pairLink ? `[Pair Link](${data.pairLink.replace('$', '')})` : '';
 
-    return `${actionEmoji} #${data.symbol.replace('$', '')} ${actionLabel} [${data.exchange.toUpperCase()}](${getExchangeUrl(data.exchange, data.symbol.toUpperCase().replace('USDT', ''), 'USDT')}) ${pairLink}`
+    return `${actionEmoji} #${data.symbol.replace('$', '')} ${actionLabel} [${data.exchange.toUpperCase()}](${getExchangeUrl(data.exchange, data.symbol.toUpperCase().replace('USDT', ''), 'USDT')})`
 }

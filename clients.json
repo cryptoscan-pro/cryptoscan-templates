@@ -612,22 +612,7 @@
                 "topicId": "9"
             },
             "isActive": true,
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
-        },
-        {
-            "id": "cca",
-            "name": "cca",
-            "query": {
-                "type": "activity",
-                "variant": "cex"
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002497117751",
-                "topicId": "9"
-            },
-            "isActive": true,
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
+            "templatePath": "./var/templates/cexactivity.js"
         },
         {
             "id": "dextransfers",
@@ -1306,24 +1291,7 @@
             "isActive": true,
             "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
-        },
-        {
-            "id": "cca",
-            "name": "cca",
-            "query": {
-                "type": "activity",
-                "variant": "cex"
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002216554231",
-                "topicId": "8"
-            },
-            "isActive": true,
-            "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
+            "templatePath": "./var/templates/cexactivity.js"
         },
         {
             "id": "dextransfers",
@@ -1957,23 +1925,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
-        },
-        {
-            "id": "cca",
-            "name": "cca",
-            "query": {
-                "type": "activity",
-                "variant": "cex"
-            },
-            "destination": {
-                "type": "channel",
-                "id": "-1002328090083",
-                "topicId": "9"
-            },
-            "isActive": true,
-            "timeout": 300000,
-            "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is cex activity - Send only message result with no comments. No comments, message content only"
+            "templatePath": "./var/templates/cexactivity.js"
         },
         {
             "id": "dextransfers",
