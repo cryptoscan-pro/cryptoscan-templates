@@ -49,6 +49,23 @@
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
+            "id": "fundingarbitrage",
+            "name": "fundingarbitrage",
+            "query": {
+                "type": "arbitrage",
+                "minFundingSpread": 1,
+                "variant": "futures-futures"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "26638"
+            },
+            "timeout": 300000,
+            "isActive": true,
+            "templatePath": "./var/templates/fundarbitrage.js"
+        },
+        {
             "id": "announcements",
             "query": {
                 "type": "announcements"
@@ -662,6 +679,23 @@
             "timeout": 300000,
             "isActive": true,
             "templatePath": "./var/templates/dexarbitrage.js"
+        },
+        {
+            "id": "fundingarbitrage",
+            "name": "fundingarbitrage",
+            "query": {
+                "type": "arbitrage",
+                "minFundingSpread": 1,
+                "variant": "futures-futures"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002216554231",
+                "topicId": "11829"
+            },
+            "timeout": 300000,
+            "isActive": true,
+            "templatePath": "./var/templates/fundarbitrage.js"
         },
         {
             "id": "announcements",
@@ -1343,6 +1377,23 @@
             "isActive": true,
             "timeout": 300000,
             "templatePath": "./var/templates/dexarbitrage.js"
+        },
+        {
+            "id": "fundingarbitrage",
+            "name": "fundingarbitrage",
+            "query": {
+                "type": "arbitrage",
+                "minFundingSpread": 1,
+                "variant": "futures-futures"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002328090083",
+                "topicId": "4747"
+            },
+            "timeout": 300000,
+            "isActive": true,
+            "templatePath": "./var/templates/fundarbitrage.js"
         },
         {
             "id": "announcements",
