@@ -27,7 +27,7 @@ export default function(data) {
     }
     
     // Add funding and fee if they exist (new format)
-    if (data.fundingSpread !== undefined || data.feePercentage !== undefined) {
+    if (data.spread !== undefined || data.feePercentage !== undefined) {
         message += `\n💰 `;
         if (data.spread !== undefined) {
             message += `Price: ${data.spread.toFixed(2)}% | `;
@@ -47,13 +47,6 @@ export default function(data) {
     message += ` #${data.exchangeFrom} #${data.exchangeTo}`;
     if (data.contract) {
         message += ` #${data.contract.slice(0, 5)}`;
-    }
-    
-    // Add DexScreener and CoinMarketCap links if contract exists (old format)
-    if (data.contract) {
-        const dexScreenerUrl = `https://dexscreener.com/search?q=${data.contract}`;
-        const coinMarketCapUrl = `https://coinmarketcap.com/community/search/latest/?q=${data.contract}/`;
-        message += `\n[DexScreener](${dexScreenerUrl}) | [CM](${coinMarketCapUrl})`;
     }
     
     // Add creation time if it exists (new format)
