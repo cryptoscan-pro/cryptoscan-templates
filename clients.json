@@ -276,7 +276,7 @@
                 "topicId": "7081"
             },
             "isActive": true,
-            "templatePath": "./var/templates/prices.js"
+            "templatePath": "./var/templates/trending.js"
         },
         {
             "id": "activity",
@@ -609,7 +609,7 @@
             "isActive": true,
             "timeout": 300000,
             "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
-            "templatePath": "./var/templates/activity-ru.js"
+            "templatePath": "./var/templates/trending.js"
         },
         {
             "id": "activity",
@@ -921,7 +921,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "templatePath": "./var/templates/prices.js"
+            "templatePath": "./var/templates/trending.js"
         },
         {
             "id": "activity",
