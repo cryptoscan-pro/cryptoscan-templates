@@ -33,6 +33,21 @@
     ],
     "pro": [
         {
+            "id": "relations",
+            "name": "relations",
+            "query": {
+                "type": "relations"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-1002497117751",
+                "topicId": "178280"
+            },
+            "isActive": true,
+            "timeout": 300000,
+            "templatePath": "./var/templates/relations.js"
+        },
+        {
             "id": "crosschainarbitrage",
             "name": "crosschainarbitrage",
             "query": {
