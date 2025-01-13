@@ -9,10 +9,9 @@
             },
             "destination": {
                 "type": "channel",
-                "id": "-4603207321"
+                "id": "-1002440013149"
             },
             "isActive": true,
-            "timeout": 300000,
             "templatePath": "./var/templates/cexlistings.js"
         }
     ],
