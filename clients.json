@@ -1,4 +1,21 @@
 {
+    "demo": [
+        {
+            "id": "cexlistings",
+            "name": "cexlistings",
+            "query": {
+                "type": "listings",
+                "variant": "cex"
+            },
+            "destination": {
+                "type": "channel",
+                "id": "-4603207321"
+            },
+            "isActive": true,
+            "timeout": 300000,
+            "templatePath": "./var/templates/cexlistings.js"
+        }
+    ],
     "news": [
         {
             "id": "news",
