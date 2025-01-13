@@ -20,5 +20,6 @@ jobs:
           script: |
             cd ${{ secrets.SSH_PATH }}
             git clone git@github.com:cryptoscan-pro/cryptoscan-templates.git templates || true
+            cd templates
             git pull origin main
             docker-compose restart crypto-bot-tg
