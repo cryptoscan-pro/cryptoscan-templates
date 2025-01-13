@@ -44,7 +44,6 @@
                 "topicId": "178280"
             },
             "isActive": true,
-            "timeout": 300000,
             "templatePath": "./var/templates/relations.js"
         },
         {
