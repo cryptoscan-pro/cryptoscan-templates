@@ -44,7 +44,7 @@
             },
             "isActive": true,
             "templatePath": "./var/templates/relations.js",
-            "aiPrompt": "You receive a message with a signal before and a signal after. Your task is to reformat it into a short, readable signal to action style with the reason by signal (what happened BEFORE). Send with emojis and hashtags, and format by multiple lines. Write it in the first person, as if you're the AI: '👀 Spotted a pattern: After the news about Trump 5 minutes ago, 💰 an arbitrage opportunity for #TRUMPCOIN emerged between #BYBIT and #BINANCE with a 5% difference!'"
+            "aiPrompt": "You receive a message with a signal before and a signal after. Your task is to reformat it into a short, readable signal to action style with the reason by signal (explain pattern: what happened BEFORE alert). Exclude non important information. Send with emojis and hashtags, and format by multiple lines. Write it in the first person, as if you're the AI. example: '👀 Spotted a pattern: After the news about Trump 5 minutes ago, 💰 an arbitrage opportunity for #TRUMPCOIN emerged between #BYBIT and #BINANCE with a 5% difference!\n\nYou may buy at Bybit and short at binance to earn'"
         },
         {
             "id": "crosschainarbitrage",
