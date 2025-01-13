@@ -12,8 +12,7 @@
                 "id": "-1002440013149"
             },
             "isActive": true,
-            "templatePath": "./var/templates/cexlistings.js",
-            "aiPrompt": "You receive a message with a signal before and a signal after. Your task is to reformat it into a short, readable news-style update with emojis. Write it in the first person, as if you're the AI: '👀 Spotted a pattern: After the news about Trump 5 minutes ago, 💰 an arbitrage opportunity for #TRUMPCOIN emerged between #BYBIT and #BINANCE with a 5% difference!'"
+            "templatePath": "./var/templates/cexlistings.js"
         }
     ],
     "news": [
@@ -44,7 +43,8 @@
                 "topicId": "178280"
             },
             "isActive": true,
-            "templatePath": "./var/templates/relations.js"
+            "templatePath": "./var/templates/relations.js",
+            "aiPrompt": "You receive a message with a signal before and a signal after. Your task is to reformat it into a short, readable news-style update with emojis. Write it in the first person, as if you're the AI: '👀 Spotted a pattern: After the news about Trump 5 minutes ago, 💰 an arbitrage opportunity for #TRUMPCOIN emerged between #BYBIT and #BINANCE with a 5% difference!'"
         },
         {
             "id": "crosschainarbitrage",
