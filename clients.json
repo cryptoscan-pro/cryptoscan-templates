@@ -371,7 +371,8 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "templatePath": "./var/templates/bridgearbitrage.js"
+            "templatePath": "./var/templates/bridgearbitrage.js",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)"
         },
         {
             "id": "futuresarbitrage",
@@ -388,6 +389,7 @@
             },
             "timeout": 300000,
             "isActive": true,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -405,6 +407,7 @@
             },
             "timeout": 300000,
             "isActive": true,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/fundarbitrage.js"
         },
         {
@@ -420,6 +423,7 @@
             "isActive": true,
             "name": "announcements",
             "timeout": 300000,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/announcements.js"
         },
         {
@@ -434,6 +438,7 @@
             },
             "isActive": true,
             "name": "etf",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/etf.js"
         },
         {
@@ -450,7 +455,7 @@
             "isActive": true,
             "name": "oi-tracker",
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/oi.js"
         },
         {
@@ -467,7 +472,7 @@
             "isActive": true,
             "name": "liquidations",
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/liquidations.js"
         },
         {
@@ -483,7 +488,7 @@
             "isActive": false,
             "name": "networks",
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -500,7 +505,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/cexlistings.js"
         },
         {
@@ -520,7 +525,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -540,7 +545,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -559,7 +564,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -575,7 +580,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "aiModel": "qwen/qwen-2-7b-instruct",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate text to russian"
         },
@@ -593,7 +598,7 @@
             "isActive": true,
             "name": "liquidations",
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/liquidations.js"
         },
         {
@@ -609,6 +614,7 @@
                 "topicId": "9"
             },
             "isActive": true,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dca-ru.js"
         },
         {
@@ -624,6 +630,7 @@
                 "topicId": "9"
             },
             "isActive": true,
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dca.js"
         },
         {
@@ -639,7 +646,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/trending.js"
         },
         {
@@ -656,7 +663,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/price-activity.js"
         },
         {
@@ -673,7 +680,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/price-activity.js"
         },
         {
@@ -690,7 +697,7 @@
             },
             "isActive": true,
             "timeout": 300000,
-            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](https://t.me/+PVQk0nep5lgxZDIy)",
+            "suffix": "[🕔 Задержка 5 мин - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/transfers-ru.js"
         }
     ],
@@ -710,6 +717,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/bridgearbitrage.js"
         },
         {
@@ -727,6 +735,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -744,6 +753,7 @@
             },
             "timeout": 300000,
             "isActive": true,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/fundarbitrage.js"
         },
         {
@@ -759,6 +769,7 @@
             "isActive": true,
             "name": "announcements",
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/announcements.js"
         },
         {
@@ -773,6 +784,7 @@
             },
             "isActive": true,
             "name": "etf",
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/etf.js"
         },
         {
@@ -789,6 +801,7 @@
             "isActive": true,
             "name": "oi-tracker",
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/oi.js"
         },
         {
@@ -805,6 +818,7 @@
             "isActive": true,
             "name": "liquidations",
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/liquidations.js"
         },
         {
@@ -820,6 +834,7 @@
             "isActive": false,
             "name": "networks",
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Send only message result with no comments. No comments, message content only"
         },
         {
@@ -836,6 +851,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/cexlistings.js"
         },
         {
@@ -855,6 +871,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -874,6 +891,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -892,6 +910,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dexarbitrage.js"
         },
         {
@@ -907,6 +926,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "aiPrompt": "Your answer rules:\n- Transform the following data into a more readable and understandable format for the user.\n- Example of message: \"🎰 #BAND buying 🔫 440K USDT by 35 sec (13%) in Binance\\nP: 1,286 ⬆️ (2,14%)\\nVolume 24h: 4M USDT\\n#CEX #prices\"\n- Summarize and present key information.\n- Make short and pretty text and describe main info. - Describe that it is short news - Send only message result with no comments. No comments, message content only. translate text to russian"
         },
         {
@@ -922,6 +942,7 @@
             },
             "isActive": true,
             "name": "liquidations",
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/liquidations.js"
         },
         {
@@ -937,6 +958,7 @@
                 "topicId": "10"
             },
             "isActive": true,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/dca.js"
         },
         {
@@ -952,6 +974,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/trending.js"
         },
         {
@@ -968,6 +991,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/price-activity.js"
         },
         {
@@ -984,6 +1008,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/price-activity.js"
         },
         {
@@ -1000,6 +1025,7 @@
             },
             "isActive": true,
             "timeout": 300000,
+            "suffix": "[🕔 Delayed 5 min - Cryptoscan Free](t.me/send?start=SBPVQk0nep5lgxZDIy)",
             "templatePath": "./var/templates/transfers.js"
         }
     ]
