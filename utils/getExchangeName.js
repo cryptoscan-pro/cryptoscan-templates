@@ -3,6 +3,9 @@ export function getExchangeName(name) {
         case "mxc": {
             return "MEXC";
         }
+        case "huobi": {
+            return "HTX";
+        }
         case "unknown": {
             return "DEX"
         }
